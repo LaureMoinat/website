@@ -80,7 +80,7 @@
     }
 
     .hero > .container {
-        width: calc(100% - 30px);
+        width: calc(100% - 35px);
         max-width: 1300px;
         margin: 0 auto;
       }
@@ -208,15 +208,16 @@
     .hero-grid {
     position: relative;
     z-index: 1;
-  
     display: grid;
-  
     grid-template-columns: 0.8fr 1.2fr;
-  
-    gap: 35px;
-  
+    gap: 20px;
     align-items: center;
     }
+
+  .hero-photo {
+    width: min(100%, 650px);
+    margin-left: auto;
+  }
 
    .intro-greeting {
   color: var(--navy);
