@@ -428,24 +428,29 @@
     }
 
     .research-card {
-        position: relative;
-      
-        padding: 29px;
-      
-        border: 1px solid var(--line);
-      
-        border-radius: var(--radius);
-      
-        background: white;
-      
-        box-shadow:
-          0 8px 25px
-          rgba(18,48,71,0.04);
-      
-        transition:
-          transform 0.25s ease,
-          box-shadow 0.25s ease;
-      }
+      position: relative;
+    
+      height: 500px;
+    
+      padding: 29px;
+    
+      border: 1px solid var(--line);
+    
+      border-radius: var(--radius);
+    
+      background: white;
+    
+      box-shadow:
+        0 8px 25px
+        rgba(18,48,71,0.04);
+    
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    
+      display: flex;
+      flex-direction: column;
+    }
 
     .research-card:hover {
       transform: translateY(-5px);
@@ -480,18 +485,29 @@
     }
     .research-image-link {
       display: block;
+    
       width: 100%;
-      margin: 20px 0;
+      height: 150px;
+    
+      margin: 18px 0;
+    
       border-radius: 14px;
+    
       overflow: hidden;
+    
+      flex-shrink: 0;
     }
     
     .research-image {
       width: 100%;
-      height: 150px;
-      object-fit: cover;
+      height: 100%;
+    
+      object-fit: contain;
+    
       display: block;
+    
       border-radius: 14px;
+    
       transition: transform 0.25s ease;
     }
     
@@ -520,10 +536,11 @@
 
     .research-card p {
       color: var(--muted);
-
+    
       font-size: 0.94rem;
+    
+      margin-top: auto;
     }
-
 
     /* =========================================================
        FEATURED PROJECT
@@ -1328,98 +1345,92 @@
 
       <div class="research-grid">
 
+  <article class="research-card">
 
-        <article class="research-card">
+    <h3>
+      <span class="card-number">01</span>
+      BIG-MITgcm - Climate model
+    </h3>
 
-          <h3>
-            <span class="card-number">01</span>
-            BIG-MITgcm - Climate model
-          </h3>
-        
-        
-            <a
-              href="https://gmd.copernicus.org/articles/19/4357/2026/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="research-image-link"
-            >
-              <img
-                src="bigmitgcm.png"
-                alt="Modelling climate states"
-                class="research-image"
-              >
-            </a>
-        
-            <p>
-              Developed efficient coupled climate models that represent the atmosphere, ocean, sea ice, vegetation, and ice sheets.
-            </p>
-        
-          </div>
-        
-        </article>
+    <a
+      href="https://gmd.copernicus.org/articles/19/4357/2026/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="research-image-link"
+    >
+      <img
+        src="bigmitgcm.png"
+        alt="BIG-MITgcm climate model"
+        class="research-image"
+      >
+    </a>
 
-        <article class="research-card">
+    <p>
+      Developed efficient coupled climate models that represent
+      the atmosphere, ocean, sea ice, vegetation, and ice sheets.
+    </p>
 
-          <h3>
-          <span class="card-number">02</span>
-          Multiple climate states
-        </h3>
+  </article>
+
+
+  <article class="research-card">
+
+    <h3>
+      <span class="card-number">02</span>
+      Multiple climate states
+    </h3>
+
+    <a
+      href="https://meetingorganizer.copernicus.org/EGU26/EGU26-6664.html"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="research-image-link"
+    >
+      <img
+        src="multiple_states.png"
+        alt="Multiple climate states"
+        class="research-image"
+      >
+    </a>
+
+    <p>
+      Characterising multiple climate states, from snowball Earth
+      to hothouse Earth.
+    </p>
+
+  </article>
+
+
+  <article class="research-card">
+
+    <h3>
+      <span class="card-number">03</span>
+      Tipping detection and climate networks
+    </h3>
+
+    <a
+      href="https://journals.aps.org/prresearch/abstract/10.1103/q9bd-4h4j"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="research-image-link"
+    >
+      <img
+        src="image_networks.png"
+        alt="Climate networks"
+        class="research-image"
+      >
+    </a>
+
+    <p>
+      Developing methods to characterize transitions between
+      climate states and identify early warning signals of
+      approaching transitions.
+    </p>
+
+  </article>
+
+</div>
       
-          <a
-            href="https://meetingorganizer.copernicus.org/EGU26/EGU26-6664.html?_=1778228451"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="research-image-link"
-          >
-            <img
-              src="multiple_states.png"
-              alt="Tipping and nonlinear dynamics"
-              class="research-image"
-            >
-          </a>
-      
-          <p>
-            Characterising multiple climate states, from snowball Earth to hothouse Earth.
-          </p>
-      
-        </div>
-      
-      </article>
-
-
-
-        <article class="research-card">
-
-        <h3>
-          <span class="card-number">03</span>
-          Tipping detection and climate networks
-        </h3>
-      
-          <a
-            href="https://journals.aps.org/prresearch/abstract/10.1103/q9bd-4h4j"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="research-image-link"
-          >
-            <img
-              src="image_networks.png"
-              alt="State-dependent climate sensitivity"
-              class="research-image"
-            >
-          </a>
-      
-          <p>
-            Developing methods to characterize transitions between climate states and identify early warning signals of approaching transitions.
-          </p>
-      
-        </div>
-      
-      </article>
-
-      </div>
-
-    </div>
-
   </section>
 
 
