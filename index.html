@@ -647,6 +647,14 @@
       place-items: center;
     }
 
+    .news-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+        border-radius: 20px;
+        padding: 20px;
+      }
     .branch {
       width: 76%;
       height: 76%;
@@ -1432,210 +1440,62 @@
 
 
 
+
   <!-- ========================================================
-       FEATURED PROJECT — BIG-MITgcm
-       ======================================================== -->
+NEWS
+======================================================== -->
+<section
+  class="feature"
+  id="projects"
+>
 
-  <section
-    class="feature"
-    id="projects"
-  >
+  <div class="container feature-grid">
 
-    <div class="container feature-grid">
+    <div>
 
-
-      <div>
-
-        <div class="section-kicker">
-          Featured project
-        </div>
-
-
-        <h2>
-          BIG-MITgcm
-        </h2>
-
-
-        <p>
-
-          I am the lead developer of
-          <strong>BIG-MITgcm v1.0</strong>,
-          a coupled ocean–atmosphere–ice-sheet–vegetation–hydrology
-          framework designed to investigate equilibrium climate states
-          and long-timescale Earth-system feedbacks.
-
-        </p>
-
-
-        <p>
-
-          The model provides an intermediate-complexity approach between
-          comprehensive Earth-system models and reduced-complexity models,
-          allowing systematic exploration of climate-state structure across
-          very different boundary conditions.
-
-        </p>
-
-
-        <a
-          class="button button-secondary"
-          href="https://doi.org/10.5194/gmd-19-4357-2026"
-          target="_blank"
-          rel="noopener"
-        >
-          Read the GMD paper
-        </a>
-
+      <div class="section-kicker">
+        News
       </div>
 
+      <h2>
+        Most recent publication
+      </h2>
 
+      <p>
+        <!-- Replace this text with your publication news -->
+        I am happy to share our latest publication on ...
+      </p>
 
-      <div class="feature-visual">
+      <p>
+        <!-- Add a second paragraph if needed -->
+        In this work, we ...
+      </p>
 
-
-        <div class="branch">
-
-          <svg
-            viewBox="0 0 500 350"
-            role="img"
-            aria-label="Schematic climate equilibrium branches"
-          >
-
-            <defs>
-
-              <linearGradient
-                id="branchGradient"
-                x1="0%"
-                y1="100%"
-                x2="100%"
-                y2="0%"
-              >
-
-                <stop
-                  offset="0%"
-                  stop-color="#72d0c5"
-                />
-
-                <stop
-                  offset="100%"
-                  stop-color="#d6a84f"
-                />
-
-              </linearGradient>
-
-            </defs>
-
-
-            <line
-              x1="55"
-              y1="300"
-              x2="465"
-              y2="300"
-              stroke="rgba(255,255,255,0.30)"
-              stroke-width="2"
-            />
-
-
-            <line
-              x1="55"
-              y1="300"
-              x2="55"
-              y2="40"
-              stroke="rgba(255,255,255,0.30)"
-              stroke-width="2"
-            />
-
-
-            <path
-              d="
-                M65 270
-                C135 265, 160 245, 195 215
-                C225 190, 230 150, 270 135
-                C310 120, 325 155, 350 175
-                C385 205, 410 195, 455 120
-              "
-              fill="none"
-              stroke="url(#branchGradient)"
-              stroke-width="6"
-              stroke-linecap="round"
-            />
-
-
-            <path
-              d="
-                M65 280
-                C135 278, 165 265, 205 245
-                C245 225, 255 190, 285 180
-                C325 166, 355 190, 390 205
-                C420 218, 438 207, 455 195
-              "
-              fill="none"
-              stroke="rgba(255,255,255,0.45)"
-              stroke-width="3"
-              stroke-dasharray="7 8"
-            />
-
-
-            <circle
-              cx="65"
-              cy="270"
-              r="7"
-              fill="#72d0c5"
-            />
-
-            <circle
-              cx="270"
-              cy="135"
-              r="7"
-              fill="#d6a84f"
-            />
-
-            <circle
-              cx="455"
-              cy="120"
-              r="7"
-              fill="#d97962"
-            />
-
-
-            <text
-              x="55"
-              y="325"
-              fill="rgba(255,255,255,0.65)"
-              font-size="15"
-            >
-              CO₂ / forcing
-            </text>
-
-
-            <text
-              x="10"
-              y="52"
-              fill="rgba(255,255,255,0.65)"
-              font-size="15"
-              transform="rotate(-90 10 52)"
-            >
-              Climate state
-            </text>
-
-          </svg>
-
-        </div>
-
-
-        <div class="feature-tag">
-          Multiple equilibria across climate states
-        </div>
-
-
-      </div>
-
+      <a
+        class="button button-secondary"
+        href="https://journals.aps.org/prresearch/abstract/10.1103/q9bd-4h4j"
+        target="_blank"
+        rel="noopener"
+      >
+        Read the publication
+      </a>
 
     </div>
 
-  </section>
 
+    <div class="feature-visual">
 
+      <img
+        src="news.png"
+        alt="Most recent publication"
+        class="news-image"
+      >
+
+    </div>
+
+  </div>
+
+</section>
 
   <!-- ========================================================
        PUBLICATIONS
