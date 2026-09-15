@@ -335,148 +335,66 @@
 
 
     /* =========================================================
-       CLIMATE GRAPHIC
-       ========================================================= */
+   HERO PHOTO & EDUCATION
+   ========================================================= */
 
-    .climate-graphic {
-      position: relative;
+.hero-content {
+  max-width: 680px;
+}
 
-      width: min(100%, 410px);
+.hero-photo {
+  width: min(100%, 390px);
+  margin-left: auto;
+}
 
-      aspect-ratio: 1;
+.hero-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
 
-      margin-left: auto;
-    }
+  border-radius: 24px;
 
-    .orb {
-      position: absolute;
+  box-shadow:
+    0 25px 60px
+    rgba(18, 48, 71, 0.18);
 
-      inset: 12%;
+  border: 1px solid var(--line);
+}
 
-      border-radius: 50%;
+.hero-education {
+  margin: 30px 0;
+}
 
-      background:
+.hero-education h2 {
+  color: var(--navy);
 
-        radial-gradient(
-          circle at 32% 28%,
-          #d8f1e8 0 10%,
-          transparent 11%
-        ),
+  font-size: 1.25rem;
 
-        radial-gradient(
-          circle at 68% 35%,
-          #c4e2d5 0 14%,
-          transparent 15%
-        ),
+  margin-bottom: 15px;
+}
 
-        radial-gradient(
-          circle at 43% 65%,
-          #aacdbd 0 18%,
-          transparent 19%
-        ),
+.education-item {
+  display: flex;
+  flex-direction: column;
 
-        radial-gradient(
-          circle at 70% 72%,
-          #88b8a5 0 12%,
-          transparent 13%
-        ),
+  margin-bottom: 12px;
 
-        linear-gradient(
-          145deg,
-          #e6f5f0,
-          #72a89a
-        );
+  padding-left: 15px;
 
-      box-shadow:
-        inset -28px -25px 55px rgba(18,48,71,0.18),
-        0 30px 70px rgba(18,48,71,0.16);
-    }
+  border-left: 3px solid var(--turquoise);
+}
 
-    .orb::before,
-    .orb::after {
-      content: "";
+.education-item strong {
+  color: var(--navy);
 
-      position: absolute;
+  font-size: 0.98rem;
+}
 
-      border-radius: 50%;
+.education-item span {
+  color: var(--muted);
 
-      border: 1px solid rgba(18,48,71,0.22);
-    }
-
-    .orb::before {
-      inset: -10%;
-
-      transform:
-        rotate(25deg)
-        scaleY(0.38);
-    }
-
-    .orb::after {
-      inset: -4%;
-
-      transform:
-        rotate(-28deg)
-        scaleY(0.55);
-    }
-
-    .orbit {
-      position: absolute;
-
-      inset: 3%;
-
-      border:
-        1px dashed
-        rgba(29,98,117,0.35);
-
-      border-radius: 50%;
-
-      transform:
-        rotate(-18deg)
-        scaleY(0.45);
-    }
-
-    .orbit-dot {
-      position: absolute;
-
-      width: 14px;
-      height: 14px;
-
-      border-radius: 50%;
-
-      background: var(--coral);
-
-      top: 2%;
-      right: 24%;
-
-      box-shadow:
-        0 0 0 7px
-        rgba(217,121,98,0.13);
-    }
-
-    .graphic-label {
-      position: absolute;
-
-      right: -4%;
-      bottom: 10%;
-
-      padding: 11px 15px;
-
-      background:
-        rgba(255,253,248,0.92);
-
-      border: 1px solid var(--line);
-
-      box-shadow: var(--shadow);
-
-      border-radius: 13px;
-
-      font-size: 0.78rem;
-
-      font-weight: 750;
-
-      color: var(--navy);
-    }
-
+  font-size: 0.88rem;
+}
 
     /* =========================================================
        SECTIONS
