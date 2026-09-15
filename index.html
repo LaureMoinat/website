@@ -79,9 +79,11 @@
       margin: 0 auto;
     }
 
-    .hero .container {
-    width: min(100% - 20px, 1300px);
-    }
+    .hero > .container {
+        width: calc(100% - 30px);
+        max-width: 1300px;
+        margin: 0 auto;
+      }
 
     /* =========================================================
        NAVIGATION
@@ -204,18 +206,16 @@
     }
 
     .hero-grid {
-      position: relative;
-      z-index: 1;
-
-      display: grid;
-
-      grid-template-columns:
-        1fr
-        1fr;
-
-      gap: 60px;
-
-      align-items: center;
+    position: relative;
+    z-index: 1;
+  
+    display: grid;
+  
+    grid-template-columns: 0.9fr 1.1fr;
+  
+    gap: 45px;
+  
+    align-items: center;
     }
 
    .intro-greeting {
