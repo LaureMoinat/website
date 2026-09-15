@@ -428,24 +428,29 @@
     }
 
     .research-card {
-      position: relative;
+  position: relative;
 
-      padding: 29px;
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  gap: 20px;
+  align-items: start;
 
-      border: 1px solid var(--line);
+  padding: 29px;
 
-      border-radius: var(--radius);
+  border: 1px solid var(--line);
 
-      background: white;
+  border-radius: var(--radius);
 
-      box-shadow:
-        0 8px 25px
-        rgba(18,48,71,0.04);
+  background: white;
 
-      transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-    }
+  box-shadow:
+    0 8px 25px
+    rgba(18,48,71,0.04);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
 
     .research-card:hover {
       transform: translateY(-5px);
@@ -470,6 +475,9 @@
       font-weight: 850;
 
       margin-bottom: 23px;
+    }
+    .research-card-content h3 {
+      margin-top: 0;
     }
 
     .research-card:nth-child(2)
@@ -1308,21 +1316,22 @@
           <div class="card-number">
             01
           </div>
-
-          <h3>
-            Climate multistability
-          </h3>
-
-          <p>
-
-            How multiple equilibrium climate states emerge, coexist
-            and disappear, and what their stability tells us about
-            the structure of the climate system.
-
-          </p>
-
-        </article>
-
+          
+          <div class="research-card-content">
+          
+            <h3>
+              Modelling climate states over multiple time scales
+            </h3>
+          
+            <p>
+              How multiple equilibrium climate states emerge, coexist
+              and disappear, and what their stability tells us about
+              the structure of the climate system.
+            </p>
+          
+          </div>
+        
+      </article>
 
 
         <article class="research-card">
