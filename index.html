@@ -609,52 +609,38 @@
       margin-bottom: 20px;
     }
 
-    .feature-visual {
-      min-height: 320px;
-
-      border-radius: 24px;
-
-      border:
-        1px solid
-        rgba(255,255,255,0.12);
-
-      background:
-
-        radial-gradient(
-          circle at 30% 30%,
-          rgba(58,166,160,0.55),
-          transparent 23%
-        ),
-
-        radial-gradient(
-          circle at 75% 70%,
-          rgba(217,121,98,0.35),
-          transparent 24%
-        ),
-
-        linear-gradient(
-          145deg,
-          #1c4b61,
-          #102d42
-        );
-
-      position: relative;
-
-      overflow: hidden;
-
-      display: grid;
-
-      place-items: center;
+    .news-title {
+      color: white;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+      margin-bottom: 10px;
+      font-weight: 700;
     }
-
+    
+    .news-title + .section-kicker {
+      color: #72d0c5;
+      font-size: 0.85rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+    }
+    
+    .news-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
     .news-image {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        display: block;
-        border-radius: 20px;
-        padding: 20px;
-      }
+      width: 100%;
+      max-width: 520px;
+      height: auto;
+      display: block;
+    }
+    
+    
     .branch {
       width: 76%;
       height: 76%;
@@ -1444,57 +1430,39 @@
   <!-- ========================================================
 NEWS
 ======================================================== -->
-<section
-  class="feature"
-  id="projects"
->
-
+<section class="feature" id="news">
   <div class="container feature-grid">
 
     <div>
-
-      <div class="section-kicker">
+      <div class="news-title">
         News
       </div>
 
-      <h2>
+      <div class="section-kicker">
         Most recent publication
-      </h2>
+      </div>
 
       <p>
-        <!-- Replace this text with your publication news -->
         I am happy to share our latest publication on ...
       </p>
 
       <p>
-        <!-- Add a second paragraph if needed -->
         In this work, we ...
       </p>
 
-      <a
-        class="button button-secondary"
-        href="https://journals.aps.org/prresearch/abstract/10.1103/q9bd-4h4j"
-        target="_blank"
-        rel="noopener"
-      >
+      <a class="button button-secondary"
+         href="https://doi.org/10.1103/q9bd-4h4j"
+         target="_blank"
+         rel="noopener">
         Read the publication
       </a>
-
     </div>
 
-
-    <div class="feature-visual">
-
-      <img
-        src="news.png"
-        alt="Most recent publication"
-        class="news-image"
-      >
-
+    <div class="news-visual">
+      <img src="news.png" alt="Most recent publication" class="news-image">
     </div>
 
   </div>
-
 </section>
 
   <!-- ========================================================
