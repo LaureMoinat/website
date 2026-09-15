@@ -428,29 +428,24 @@
     }
 
     .research-card {
-  position: relative;
-
-  display: grid;
-  grid-template-columns: 55px 1fr;
-  gap: 20px;
-  align-items: start;
-
-  padding: 29px;
-
-  border: 1px solid var(--line);
-
-  border-radius: var(--radius);
-
-  background: white;
-
-  box-shadow:
-    0 8px 25px
-    rgba(18,48,71,0.04);
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
+        position: relative;
+      
+        padding: 29px;
+      
+        border: 1px solid var(--line);
+      
+        border-radius: var(--radius);
+      
+        background: white;
+      
+        box-shadow:
+          0 8px 25px
+          rgba(18,48,71,0.04);
+      
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
 
     .research-card:hover {
       transform: translateY(-5px);
@@ -459,35 +454,41 @@
     }
 
     .card-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    
       width: 38px;
       height: 38px;
-
-      display: grid;
-
-      place-items: center;
-
+    
+      margin-right: 12px;
+    
       border-radius: 11px;
-
+    
       background: #e4f2ef;
-
+    
       color: var(--blue);
-
+    
       font-weight: 850;
-
+    
+      font-size: 0.9rem;
+    
+      vertical-align: middle;
     }
     .research-card-content h3 {
       margin-top: 0;
     }
     .research-image-link {
       display: block;
-      margin: 18px 0 20px;
+      width: 100%;
+      margin: 20px 0;
       border-radius: 14px;
       overflow: hidden;
     }
     
     .research-image {
       width: 100%;
-      height: 130px;
+      height: 150px;
       object-fit: cover;
       display: block;
       border-radius: 14px;
@@ -1330,14 +1331,11 @@
 
         <article class="research-card">
 
-          <div class="card-number">
-            01
-          </div>
+          <h3>
+            <span class="card-number">01</span>
+            BIG-MITgcm - Climate model
+          </h3>
         
-          <div class="research-card-content">
-        
-            <h3>
-              BIG-MITgcm - Climate model
         
             <a
               href="https://gmd.copernicus.org/articles/19/4357/2026/"
@@ -1362,15 +1360,10 @@
 
         <article class="research-card">
 
-        <div class="card-number">
-          02
-        </div>
-      
-        <div class="research-card-content">
-      
           <h3>
-            Multiple climate states
-          </h3>
+          <span class="card-number">02</span>
+          Multiple climate states
+        </h3>
       
           <a
             href="https://meetingorganizer.copernicus.org/EGU26/EGU26-6664.html?_=1778228451"
@@ -1397,15 +1390,10 @@
 
         <article class="research-card">
 
-        <div class="card-number">
-          03
-        </div>
-      
-        <div class="research-card-content">
-      
-          <h3>
-            Tipping detection and climate networks
-          </h3>
+        <h3>
+          <span class="card-number">03</span>
+          Tipping detection and climate networks
+        </h3>
       
           <a
             href="https://journals.aps.org/prresearch/abstract/10.1103/q9bd-4h4j"
