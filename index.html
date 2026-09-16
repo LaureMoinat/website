@@ -687,6 +687,10 @@
    PUBLICATIONS
    ========================================================= */
 
+/* =========================================================
+   PUBLICATIONS
+   ========================================================= */
+
 .publications {
   background: #f1f5f1;
 }
@@ -697,102 +701,99 @@
 
 .pub-section-title {
   color: var(--navy);
-
   font-size: 1.35rem;
-
   line-height: 1.2;
-
   margin-bottom: 20px;
-
   letter-spacing: -0.02em;
 }
 
-.pub-list {
+.pub-list,
+.work-list {
   display: grid;
   gap: 0;
 }
 
-.publication {
+/* Same style for publications and manuscripts */
+
+.publication,
+.work-item {
   display: grid;
-
   grid-template-columns: 55px 1fr;
-
   gap: 18px;
-
   padding: 24px 0;
-
   border-top: 1px solid var(--line);
-
   background: transparent;
-
   align-items: start;
 }
 
-.publication:last-child {
+.publication:last-child,
+.work-item:last-child {
   border-bottom: 1px solid var(--line);
+}
+
+/* Number */
+
+.pub-number,
+.work-number {
+  font-size: 0.9rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  padding-top: 3px;
 }
 
 .pub-number {
   color: var(--turquoise);
-
-  font-size: 0.9rem;
-
-  font-weight: 850;
-
-  letter-spacing: 0.04em;
-
-  padding-top: 3px;
 }
 
-.publication-content h3 {
+.work-number {
+  color: var(--coral);
+}
+
+/* Titles */
+
+.publication-content h3,
+.work-item h3 {
   color: var(--navy);
-
   font-size: 1.04rem;
-
   line-height: 1.5;
-
   font-weight: 650;
-
   margin-bottom: 7px;
 }
 
-.publication-authors {
+/* Authors */
+
+.publication-authors,
+.work-authors {
   color: #52666e;
-
   font-size: 0.89rem;
-
   line-height: 1.55;
-
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
+
+/* Journal information */
 
 .publication-journal {
   color: var(--muted);
-
   font-size: 0.89rem;
-
   line-height: 1.55;
 }
 
 .publication-journal em {
   color: var(--ink);
-
   font-style: italic;
 }
 
 .publication-journal strong {
   color: var(--navy);
-
   font-weight: 750;
 }
 
+/* DOI */
+
 .pub-link {
   display: inline-block;
-
   margin-top: 9px;
-
   font-size: 0.82rem;
-
   font-weight: 750;
 }
 
@@ -800,80 +801,14 @@
   text-decoration: underline;
 }
 
-
-/* =========================================================
-   IN PREPARATION / UNDER REVIEW
-   ========================================================= */
-
-.work-list {
-  display: grid;
-
-  gap: 0;
-}
-
-.work-item {
-  display: grid;
-
-  grid-template-columns: 55px 1fr;
-
-  gap: 18px;
-
-  padding: 24px 0;
-
-  border-top: 1px solid var(--line);
-
-  align-items: start;
-}
-
-.work-item:last-child {
-  border-bottom: 1px solid var(--line);
-}
-
-.work-number {
-  color: var(--coral);
-
-  font-size: 0.9rem;
-
-  font-weight: 850;
-
-  letter-spacing: 0.04em;
-
-  padding-top: 3px;
-}
-
-.work-item h3 {
-  color: var(--navy);
-
-  font-size: 1.04rem;
-
-  line-height: 1.5;
-
-  font-weight: 650;
-
-  margin-bottom: 7px;
-}
-
-.work-authors {
-  color: #52666e;
-
-  font-size: 0.89rem;
-
-  line-height: 1.55;
-
-  margin-bottom: 6px;
-}
+/* Status */
 
 .work-status {
   display: inline-block;
-
   color: var(--coral);
-
   font-size: 0.76rem;
-
   font-weight: 800;
-
   letter-spacing: 0.07em;
-
   text-transform: uppercase;
 }
 
@@ -884,17 +819,14 @@
 
 .orcid-footer {
   text-align: right;
-
   margin-top: 25px;
-
   font-size: 0.84rem;
-
   font-weight: 700;
 }
 
 
 /* =========================================================
-   MOBILE PUBLICATIONS
+   MOBILE
    ========================================================= */
 
 @media (max-width: 650px) {
@@ -902,9 +834,7 @@
   .publication,
   .work-item {
     grid-template-columns: 38px 1fr;
-
     gap: 12px;
-
     padding: 21px 0;
   }
 
@@ -922,7 +852,6 @@
   .orcid-footer {
     text-align: center;
   }
-
 }
 
     /* =========================================================
