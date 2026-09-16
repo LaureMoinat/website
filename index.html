@@ -681,30 +681,40 @@
        PUBLICATIONS
        ========================================================= */
 
-    /*
-       IMPORTANT:
-       Both peer-reviewed publications and manuscripts use
-       the exact same transparent layout.
-    */
-
     .publications {
       background: #f1f5f1;
+    }
+
+    /*
+       IMPORTANT:
+       Both section headings use exactly the same typography.
+    */
+
+    .publications .pub-section-title {
+      color: var(--navy);
+
+      font-size: clamp(2rem, 4vw, 3rem);
+
+      line-height: 1.12;
+
+      letter-spacing: -0.035em;
+
+      font-weight: 700;
+
+      margin-bottom: 28px;
     }
 
     .pub-section {
       margin-top: 45px;
     }
 
-    .pub-section-title {
-      color: var(--navy);
+    /*
+       First subsection has no extra large gap because it
+       comes immediately after the "Publications" kicker.
+    */
 
-      font-size: 1.35rem;
-
-      line-height: 1.2;
-
-      margin-bottom: 20px;
-
-      letter-spacing: -0.02em;
+    .pub-section:first-of-type {
+      margin-top: 20px;
     }
 
     .pub-list,
@@ -714,10 +724,12 @@
     }
 
     /*
-       NO WHITE BACKGROUND
-       NO CARD
-       NO SHADOW
-       NO ROUNDED CORNERS
+       PUBLICATION + MANUSCRIPT ITEMS
+       Same transparent style
+       No white background
+       No card
+       No shadow
+       No rounded corners
     */
 
     .publication,
@@ -743,54 +755,55 @@
       transition: none;
     }
 
-    .publications h2 {
-    font-size: 3rem;
-    line-height: 1.1;
-    margin-bottom: 2.5rem;
-}
+    .publication:last-child,
+    .work-item:last-child {
+      border-bottom: 1px solid var(--line);
+    }
 
-.publication,
-.work-item {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 2rem;
-    padding: 1.8rem 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
-    background: transparent;
-}
+    .pub-number,
+    .work-number {
+      font-family: inherit;
 
-.publication:last-child,
-.work-item:last-child {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-}
+      font-size: 0.9rem;
 
-.pub-number,
-.work-number {
-    font-family: 'DM Mono', monospace;
-    font-size: 1rem;
-    font-weight: 500;
-    padding-top: 0.25rem;
-}
+      font-weight: 800;
 
-/* SAME FONT AND SIZE FOR BOTH SECTIONS */
-.publication-content h3,
-.work-item h3 {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.35rem;
-    line-height: 1.45;
-    font-weight: 500;
-    margin: 0 0 0.6rem;
-    color: var(--dark);
-}
+      padding-top: 4px;
 
-.publication-content p,
-.work-item p {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin: 0.3rem 0;
-}
-    /* Authors */
+      color: var(--turquoise);
+    }
+
+    .work-number {
+      color: var(--coral);
+    }
+
+    /*
+       SAME FONT FOR PEER-REVIEWED AND IN-PREPARATION TITLES
+    */
+
+    .publication-content h3,
+    .work-item h3 {
+      color: var(--navy);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size: 1.25rem;
+
+      line-height: 1.45;
+
+      font-weight: 650;
+
+      letter-spacing: -0.015em;
+
+      margin: 0 0 8px;
+    }
 
     .publication-authors,
     .work-authors {
@@ -802,8 +815,6 @@
 
       margin-bottom: 6px;
     }
-
-    /* Journal information */
 
     .publication-journal {
       color: var(--muted);
@@ -825,8 +836,6 @@
       font-weight: 750;
     }
 
-    /* DOI */
-
     .pub-link {
       display: inline-block;
 
@@ -841,8 +850,6 @@
       text-decoration: underline;
     }
 
-    /* Manuscript status */
-
     .work-status {
       display: inline-block;
 
@@ -856,8 +863,6 @@
 
       text-transform: uppercase;
     }
-
-    /* ORCID */
 
     .orcid-footer {
       text-align: right;
@@ -1252,6 +1257,14 @@
         margin-bottom: 3px;
       }
 
+      /*
+         Same heading size for both subsections on mobile.
+      */
+
+      .publications .pub-section-title {
+        font-size: 2rem;
+      }
+
       .publication-content h3,
       .work-item h3 {
         font-size: 1rem;
@@ -1641,22 +1654,94 @@
 
     <div class="container">
 
-
       <div class="section-kicker">
         Publications
       </div>
 
 
-      <h2 class="section-title">
-        Peer-reviewed publications
-      </h2>
-
-
       <!-- ====================================================
-           PEER-REVIEWED
+           IN PREPARATION / UNDER REVIEW — FIRST
            ==================================================== -->
 
       <div class="pub-section">
+
+        <h2 class="pub-section-title">
+          In preparation / Under review
+        </h2>
+
+
+        <div class="work-list">
+
+
+          <!-- Manuscript 01 -->
+
+          <article class="work-item">
+
+            <div class="work-number">
+              01
+            </div>
+
+            <div>
+
+              <h3>
+                Title of manuscript in preparation
+              </h3>
+
+              <p class="work-authors">
+                Laure Moinat, Co-author Name, and Co-author Name
+              </p>
+
+              <span class="work-status">
+                In preparation
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <!-- Manuscript 02 -->
+
+          <article class="work-item">
+
+            <div class="work-number">
+              02
+            </div>
+
+            <div>
+
+              <h3>
+                Title of manuscript under review
+              </h3>
+
+              <p class="work-authors">
+                Laure Moinat, Co-author Name, and Co-author Name
+              </p>
+
+              <span class="work-status">
+                Under review
+              </span>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+
+      <!-- ====================================================
+           PEER-REVIEWED PUBLICATIONS — SECOND
+           ==================================================== -->
+
+      <div class="pub-section">
+
+        <h2 class="pub-section-title">
+          Peer-reviewed publications
+        </h2>
+
 
         <div class="pub-list">
 
@@ -1814,79 +1899,6 @@
               >
                 DOI →
               </a>
-
-            </div>
-
-          </article>
-
-
-        </div>
-
-      </div>
-
-
-      <!-- ====================================================
-           IN PREPARATION / UNDER REVIEW
-           ==================================================== -->
-
-      <div class="pub-section">
-
-        <h3 class="pub-section-title">
-          In preparation / Under review
-        </h3>
-
-
-        <div class="work-list">
-
-
-          <!-- Manuscript 01 -->
-
-          <article class="work-item">
-
-            <div class="work-number">
-              01
-            </div>
-
-            <div>
-
-              <h3>
-                Title of manuscript in preparation
-              </h3>
-
-              <p class="work-authors">
-                Laure Moinat, Co-author Name, and Co-author Name
-              </p>
-
-              <span class="work-status">
-                In preparation
-              </span>
-
-            </div>
-
-          </article>
-
-
-          <!-- Manuscript 02 -->
-
-          <article class="work-item">
-
-            <div class="work-number">
-              02
-            </div>
-
-            <div>
-
-              <h3>
-                Title of manuscript under review
-              </h3>
-
-              <p class="work-authors">
-                Laure Moinat, Co-author Name, and Co-author Name
-              </p>
-
-              <span class="work-status">
-                Under review
-              </span>
 
             </div>
 
