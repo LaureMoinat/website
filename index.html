@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -693,7 +694,7 @@
     .publications .pub-section-title {
       color: var(--navy);
 
-      font-size:1.5rem;
+      font-size: 1.5rem;
 
       line-height: 1.12;
 
@@ -708,11 +709,6 @@
       margin-top: 45px;
     }
 
-    /*
-       First subsection has no extra large gap because it
-       comes immediately after the "Publications" kicker.
-    */
-
     .pub-section:first-of-type {
       margin-top: 20px;
     }
@@ -722,15 +718,6 @@
       display: grid;
       gap: 0;
     }
-
-    /*
-       PUBLICATION + MANUSCRIPT ITEMS
-       Same transparent style
-       No white background
-       No card
-       No shadow
-       No rounded corners
-    */
 
     .publication,
     .work-item {
@@ -776,10 +763,6 @@
     .work-number {
       color: var(--coral);
     }
-
-    /*
-       SAME FONT FOR PEER-REVIEWED AND IN-PREPARATION TITLES
-    */
 
     .publication-content h3,
     .work-item h3 {
@@ -1237,11 +1220,6 @@
         grid-template-columns: 1fr;
       }
 
-      /*
-         Mobile publication layout:
-         number above text, still transparent.
-      */
-
       .publication,
       .work-item {
         grid-template-columns: 1fr;
@@ -1256,10 +1234,6 @@
         padding-top: 0;
         margin-bottom: 3px;
       }
-
-      /*
-         Same heading size for both subsections on mobile.
-      */
 
       .publications .pub-section-title {
         font-size: 1.5rem;
@@ -1288,11 +1262,10 @@
     }
 
   </style>
+
 </head>
 
-
 <body>
-
 
   <!-- ========================================================
        NAVIGATION
@@ -1300,44 +1273,45 @@
 
   <nav class="nav">
 
-    <div class="container nav-inner">
+```
+<div class="container nav-inner">
 
-      <a class="logo" href="#top">
-        Laure Moinat <span>– Climate Physics</span>
-      </a>
+  <a class="logo" href="#top">
+    Laure Moinat <span>– Climate Physics</span>
+  </a>
 
-      <ul class="nav-links">
+  <ul class="nav-links">
 
-        <li>
-          <a href="#research">Research</a>
-        </li>
+    <li>
+      <a href="#research">Research</a>
+    </li>
 
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
+    <li>
+      <a href="#projects">Projects</a>
+    </li>
 
-        <li>
-          <a href="#publications">Publications</a>
-        </li>
+    <li>
+      <a href="#publications">Publications</a>
+    </li>
 
-        <li>
-          <a href="#teaching">Teaching</a>
-        </li>
+    <li>
+      <a href="#teaching">Teaching</a>
+    </li>
 
-        <li>
-          <a href="#about">About</a>
-        </li>
+    <li>
+      <a href="#about">About</a>
+    </li>
 
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
 
-      </ul>
+  </ul>
 
-    </div>
+</div>
+```
 
   </nav>
-
 
   <!-- ========================================================
        HERO
@@ -1345,119 +1319,120 @@
 
   <header class="hero" id="top">
 
-    <div class="container">
+```
+<div class="container">
 
-      <div class="hero-grid">
+  <div class="hero-grid">
 
-        <div class="hero-content">
+    <div class="hero-content">
 
-          <div class="intro-greeting">
-            Hi there, I am Laure!
-          </div>
-
-          <p class="hero-lead">
-            I am currently a PhD researcher at the University of Geneva in physics studying how the
-            Earth system can occupy multiple climate states — and how
-            feedbacks, stability and nonlinear dynamics shape transitions
-            between them.
-          </p>
-
-          <div class="hero-education">
-
-            <h2>Education</h2>
-
-            <div class="education-item">
-              <strong>PhD in Physics - Nonlinear climate dynamics</strong>
-              <span>University of Geneva · 2023–present</span>
-            </div>
-
-            <div class="education-item">
-              <strong>Master of Science in physics, specialization in applied physics</strong>
-              <span>University of Geneva · 2021–2023</span>
-            </div>
-
-            <div class="education-item">
-              <strong>Bachelor of Science in physics</strong>
-              <span>University of Geneva · 2018–2021</span>
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div class="hero-photo">
-
-          <img
-            src="laure.png"
-            alt="Laure Moinat"
-          >
-
-        </div>
-
+      <div class="intro-greeting">
+        Hi there, I am Laure!
       </div>
 
+      <p class="hero-lead">
+        I am currently a PhD researcher at the University of Geneva in physics studying how the
+        Earth system can occupy multiple climate states — and how
+        feedbacks, stability and nonlinear dynamics shape transitions
+        between them.
+      </p>
 
-      <!-- Buttons -->
+      <div class="hero-education">
 
-      <div class="hero-buttons">
+        <h2>Education</h2>
 
-        <a
-          class="button button-primary"
-          href="#research"
-        >
-          Explore my research
-        </a>
+        <div class="education-item">
+          <strong>PhD in Physics - Nonlinear climate dynamics</strong>
+          <span>University of Geneva · 2023–present</span>
+        </div>
 
-        <a
-          class="button button-secondary"
-          href="https://scholar.google.com/citations?user=m_wviaoAAAAJ&hl=en&oi=ao"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Google Scholar
-        </a>
+        <div class="education-item">
+          <strong>Master of Science in physics, specialization in applied physics</strong>
+          <span>University of Geneva · 2021–2023</span>
+        </div>
 
-        <a
-          class="button button-secondary"
-          href="https://orcid.org/0000-0002-4831-731X"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ORCID
-        </a>
-
-        <a
-          class="button button-secondary"
-          href="https://www.linkedin.com/in/laure-moinat-a71088219/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-
-        <a
-          class="button button-secondary"
-          href="Laure Moinat_CV.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full CV
-        </a>
-
-        <a
-          class="button button-secondary"
-          href="#contact"
-        >
-          Get in touch
-        </a>
+        <div class="education-item">
+          <strong>Bachelor of Science in physics</strong>
+          <span>University of Geneva · 2018–2021</span>
+        </div>
 
       </div>
 
     </div>
 
-  </header>
 
+    <div class="hero-photo">
+
+      <img
+        src="laure.png"
+        alt="Laure Moinat"
+      >
+
+    </div>
+
+  </div>
+
+
+  <!-- Buttons -->
+
+  <div class="hero-buttons">
+
+    <a
+      class="button button-primary"
+      href="#research"
+    >
+      Explore my research
+    </a>
+
+    <a
+      class="button button-secondary"
+      href="https://scholar.google.com/citations?user=m_wviaoAAAAJ&hl=en&oi=ao"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Google Scholar
+    </a>
+
+    <a
+      class="button button-secondary"
+      href="https://orcid.org/0000-0002-4831-731X"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      ORCID
+    </a>
+
+    <a
+      class="button button-secondary"
+      href="https://www.linkedin.com/in/laure-moinat-a71088219/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      LinkedIn
+    </a>
+
+    <a
+      class="button button-secondary"
+      href="Laure Moinat_CV.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Full CV
+    </a>
+
+    <a
+      class="button button-secondary"
+      href="#contact"
+    >
+      Get in touch
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </header>
 
   <!-- ========================================================
        RESEARCH
@@ -1468,118 +1443,119 @@
     id="research"
   >
 
-    <div class="container">
+```
+<div class="container">
 
-      <div class="section-kicker">
-        Research
-      </div>
+  <div class="section-kicker">
+    Research
+  </div>
 
-      <h2 class="section-title">
-        Earth’s multiple climate states: emergence, stability, and transitions
-      </h2>
+  <h2 class="section-title">
+    Earth’s multiple climate states: emergence, stability, and transitions
+  </h2>
 
-      <p class="section-intro">
-        My research focuses on how nonlinear interactions within the Earth system give rise to multiple climate states
-        and tipping behavior. I combine coupled climate modeling, nonlinear dynamics, and paleoclimate data to understand the
-        emergence and stability of Earth’s multiple equilibrium states, their transitions,
-        and their consistency with paleoclimate evidence. I also use climate network approaches to characterize the spatial
-        signatures of climate states and identify early warning signals of approaching transitions.
+  <p class="section-intro">
+    My research focuses on how nonlinear interactions within the Earth system give rise to multiple climate states
+    and tipping behavior. I combine coupled climate modeling, nonlinear dynamics, and paleoclimate data to understand the
+    emergence and stability of Earth’s multiple equilibrium states, their transitions,
+    and their consistency with paleoclimate evidence. I also use climate network approaches to characterize the spatial
+    signatures of climate states and identify early warning signals of approaching transitions.
+  </p>
+
+
+  <div class="research-grid">
+
+
+    <article class="research-card">
+
+      <h3>
+        <span class="card-number">01</span>
+        BIG-MITgcm
+      </h3>
+
+      <a
+        href="https://gmd.copernicus.org/articles/19/4357/2026/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="research-image-link"
+      >
+        <img
+          src="bigmitgcm.png"
+          alt="BIG-MITgcm climate model"
+          class="research-image"
+        >
+      </a>
+
+      <p>
+        Developed efficient coupled climate models that represent
+        the atmosphere, ocean, sea ice, vegetation, and ice sheets.
       </p>
 
-
-      <div class="research-grid">
-
-
-        <article class="research-card">
-
-          <h3>
-            <span class="card-number">01</span>
-            BIG-MITgcm
-          </h3>
-
-          <a
-            href="https://gmd.copernicus.org/articles/19/4357/2026/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="research-image-link"
-          >
-            <img
-              src="bigmitgcm.png"
-              alt="BIG-MITgcm climate model"
-              class="research-image"
-            >
-          </a>
-
-          <p>
-            Developed efficient coupled climate models that represent
-            the atmosphere, ocean, sea ice, vegetation, and ice sheets.
-          </p>
-
-        </article>
+    </article>
 
 
-        <article class="research-card">
+    <article class="research-card">
 
-          <h3>
-            <span class="card-number">02</span>
-            Multiple climate states
-          </h3>
+      <h3>
+        <span class="card-number">02</span>
+        Multiple climate states
+      </h3>
 
-          <a
-            href="https://meetingorganizer.copernicus.org/EGU26/EGU26-6664.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="research-image-link"
-          >
-            <img
-              src="multiple_states.png"
-              alt="Multiple climate states"
-              class="research-image"
-            >
-          </a>
+      <a
+        href="https://meetingorganizer.copernicus.org/EGU26/EGU26-6664.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="research-image-link"
+      >
+        <img
+          src="multiple_states.png"
+          alt="Multiple climate states"
+          class="research-image"
+        >
+      </a>
 
-          <p>
-            Characterising multiple climate states, from Snowball to Hothouse Earth, and understanding
-            their role in Earth’s climate evolution over the last million years and into the future.
-          </p>
+      <p>
+        Characterising multiple climate states, from Snowball to Hothouse Earth, and understanding
+        their role in Earth’s climate evolution over the last million years and into the future.
+      </p>
 
-        </article>
+    </article>
 
 
-        <article class="research-card">
+    <article class="research-card">
 
-          <h3>
-            <span class="card-number">03</span>
-            Climate networks
-          </h3>
+      <h3>
+        <span class="card-number">03</span>
+        Climate networks
+      </h3>
 
-          <a
-            href="https://journals.aps.org/prresearch/abstract/10.1103/q9bd-4h4j"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="research-image-link"
-          >
-            <img
-              src="image_networks.png"
-              alt="Climate networks"
-              class="research-image"
-            >
-          </a>
+      <a
+        href="https://journals.aps.org/prresearch/abstract/10.1103/q9bd-4h4j"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="research-image-link"
+      >
+        <img
+          src="image_networks.png"
+          alt="Climate networks"
+          class="research-image"
+        >
+      </a>
 
-          <p>
-            Developing methods to characterize transitions between
-            climate states and identify early warning signals of
-            approaching transitions.
-          </p>
+      <p>
+        Developing methods to characterize transitions between
+        climate states and identify early warning signals of
+        approaching transitions.
+      </p>
 
-        </article>
+    </article>
 
-      </div>
+  </div>
 
-    </div>
+</div>
+```
 
   </section>
-
 
   <!-- ========================================================
        NEWS
@@ -1587,61 +1563,62 @@
 
   <section class="feature" id="news">
 
-    <div class="container feature-grid">
+```
+<div class="container feature-grid">
 
-      <div>
+  <div>
 
-        <div class="news-title">
-          News
-        </div>
-
-        <div class="section-kicker">
-          Most recent publication: Climate network characterization of the Atlantic Meridional Overturning Circulation edge state
-        </div>
-
-        <p>
-          This work characterizes the spatial signature of the AMOC edge state,
-          also known as the Melancholia state, which lies on the boundary separating the ON and OFF states of the circulation.
-          Using climate networks, we identify a distinct signature of this state, marked by enhanced
-          teleconnections between the northern and southern Atlantic and increased network connectivity.
-
-          These results provide a potential way to identify the AMOC edge state in state-of-the-art
-          climate models and, potentially, in observations. They may also contribute to the development
-          of early warning signals for an approaching AMOC collapse.
-        </p>
-
-        <p>
-          The figure on the right shows the strength of the links between the different regions.
-          The edge state, in its two convective modes, is characterized by the emergence of teleconnections with the
-          34° region at the surface. This shows that this unstable state exhibits a distinct spatial signature.
-        </p>
-
-        <a
-          class="button button-secondary"
-          href="https://doi.org/10.1103/q9bd-4h4j"
-          target="_blank"
-          rel="noopener"
-        >
-          Read the publication
-        </a>
-
-      </div>
-
-
-      <div class="news-visual">
-
-        <img
-          src="news.png"
-          alt="Most recent publication"
-          class="news-image"
-        >
-
-      </div>
-
+    <div class="news-title">
+      News
     </div>
 
-  </section>
+    <div class="section-kicker">
+      Most recent publication: Climate network characterization of the Atlantic Meridional Overturning Circulation edge state
+    </div>
 
+    <p>
+      This work characterizes the spatial signature of the AMOC edge state,
+      also known as the Melancholia state, which lies on the boundary separating the ON and OFF states of the circulation.
+      Using climate networks, we identify a distinct signature of this state, marked by enhanced
+      teleconnections between the northern and southern Atlantic and increased network connectivity.
+
+      These results provide a potential way to identify the AMOC edge state in state-of-the-art
+      climate models and, potentially, in observations. They may also contribute to the development
+      of early warning signals for an approaching AMOC collapse.
+    </p>
+
+    <p>
+      The figure on the right shows the strength of the links between the different regions.
+      The edge state, in its two convective modes, is characterized by the emergence of teleconnections with the
+      34° region at the surface. This shows that this unstable state exhibits a distinct spatial signature.
+    </p>
+
+    <a
+      class="button button-secondary"
+      href="https://doi.org/10.1103/q9bd-4h4j"
+      target="_blank"
+      rel="noopener"
+    >
+      Read the publication
+    </a>
+
+  </div>
+
+
+  <div class="news-visual">
+
+    <img
+      src="news.png"
+      alt="Most recent publication"
+      class="news-image"
+    >
+
+  </div>
+
+</div>
+```
+
+  </section>
 
   <!-- ========================================================
        PUBLICATIONS
@@ -1652,548 +1629,551 @@
     id="publications"
   >
 
-    <div class="container">
+```
+<div class="container">
 
-      <div class="section-kicker">
-        Publications
-      </div>
-
-
-      <!-- ====================================================
-           IN PREPARATION / UNDER REVIEW — FIRST
-           ==================================================== -->
-
-      <div class="pub-section">
-
-        <h2 class="pub-section-title">
-          In preparation / Under review
-        </h2>
+  <div class="section-kicker">
+    Publications
+  </div>
 
 
-        <div class="work-list">
+  <!-- ====================================================
+       IN PREPARATION / UNDER REVIEW — FIRST
+       ==================================================== -->
+
+  <div class="pub-section">
+
+    <h2 class="pub-section-title">
+      In preparation / Under review
+    </h2>
 
 
-          <!-- Manuscript 01 -->
-
-          <article class="work-item">
-
-            <div class="work-number">
-              6
-            </div>
-
-            <div>
-
-              <h3>
-                Multiple climate attractors in the present-day continental configuration: mechanisms and implications
-              </h3>
-
-              <p class="work-authors">
-                Laure Moinat, John Marshall, and Maura Brunetti
-              </p>
-
-              <span class="work-status">
-                In preparation
-              </span>
-
-            </div>
-
-          </article>
+    <div class="work-list">
 
 
-          <!-- Manuscript 02 -->
+      <!-- Manuscript 01 -->
 
-          <article class="work-item">
+      <article class="work-item">
 
-            <div class="work-number">
-              5
-            </div>
+        <div class="work-number">
+          6
+        </div>
 
-            <div>
+        <div>
 
-              <h3>
-                Earth’s mantle dynamics shape climate and the Earth system
-              </h3>
+          <h3>
+            Multiple climate attractors in the present-day continental configuration: mechanisms and implications
+          </h3>
 
-              <p class="work-authors">
-                Pietro Sternai & Laure Moinat, Agostino Meroni, Bram Vaes, Claudia Pasquero, Maura Brunetti and Christian Vérard  
-              </p>
+          <p class="work-authors">
+            Laure Moinat, John Marshall, and Maura Brunetti
+          </p>
 
-              <span class="work-status">
-                Under review
-              </span>
-
-            </div>
-
-          </article>
-
+          <span class="work-status">
+            In preparation
+          </span>
 
         </div>
 
-      </div>
+      </article>
 
 
-      <!-- ====================================================
-           PEER-REVIEWED PUBLICATIONS — SECOND
-           ==================================================== -->
+      <!-- Manuscript 02 -->
 
-      <div class="pub-section">
+      <article class="work-item">
 
-        <h2 class="pub-section-title">
-          Peer-reviewed publications
-        </h2>
+        <div class="work-number">
+          5
+        </div>
 
+        <div>
 
-        <div class="pub-list">
+          <h3>
+            Earth’s mantle dynamics shape climate and the Earth system
+          </h3>
 
+          <p class="work-authors">
+            Pietro Sternai & Laure Moinat, Agostino Meroni, Bram Vaes, Claudia Pasquero, Maura Brunetti and Christian Vérard
+          </p>
 
-          <!-- 01 -->
-
-          <article class="publication">
-
-            <div class="pub-number">
-              4
-            </div>
-
-            <div class="publication-content">
-
-              <h3>
-                Climate network characterization of the Atlantic
-                Meridional Overturning Circulation edge state
-              </h3>
-
-              <p class="publication-authors">
-                Laure Moinat, Reyk Börner, Valerio Lucarini,
-                Maura Brunetti, and Henk A. Dijkstra
-              </p>
-
-              <p class="publication-journal">
-                <em>Physical Review Research</em>
-                <strong>8</strong>, 033268 (2026).
-              </p>
-
-              <a
-                class="pub-link"
-                href="https://doi.org/10.1103/q9bd-4h4j"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                DOI →
-              </a>
-
-            </div>
-
-          </article>
-
-
-          <!-- 02 -->
-
-          <article class="publication">
-
-            <div class="pub-number">
-              3
-            </div>
-
-            <div class="publication-content">
-
-              <h3>
-                Biogeodynamics-Ice sheet-Geneva-MITgcm
-                (BIG-MITgcm, v1.0): a simulation tool for
-                exploring climate states with a representation
-                of global ice sheets
-              </h3>
-
-              <p class="publication-authors">
-                Laure Moinat, Florian Franziskakis, Christian Vérard,
-                Daniel N. Goldberg, and Maura Brunetti
-              </p>
-
-              <p class="publication-journal">
-                <em>Geoscientific Model Development</em>
-                <strong>19</strong>, 4357–4384 (2026).
-              </p>
-
-              <a
-                class="pub-link"
-                href="https://doi.org/10.5194/gmd-19-4357-2026"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                DOI →
-              </a>
-
-            </div>
-
-          </article>
-
-
-          <!-- 03 -->
-
-          <article class="publication">
-
-            <div class="pub-number">
-              2
-            </div>
-
-            <div class="publication-content">
-
-              <h3>
-                Comparing ecological relevance of climate
-                velocity indices
-              </h3>
-
-              <p class="publication-authors">
-                Laure Moinat, Iaroslav Gaponenko, Stéphane Goyette,
-                and Jérôme Kasparian
-              </p>
-
-              <p class="publication-journal">
-                <em>Scientific Reports</em>
-                <strong>16</strong>, 8797 (2026).
-              </p>
-
-              <a
-                class="pub-link"
-                href="https://doi.org/10.1038/s41598-025-32377-0"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                DOI →
-              </a>
-
-            </div>
-
-          </article>
-
-
-          <!-- 04 -->
-
-          <article class="publication">
-
-            <div class="pub-number">
-              1
-            </div>
-
-            <div class="publication-content">
-
-              <h3>
-                Tipping detection using climate networks
-              </h3>
-
-              <p class="publication-authors">
-                Laure Moinat, Jérôme Kasparian, and Maura Brunetti
-              </p>
-
-              <p class="publication-journal">
-                <em>
-                  Chaos: An Interdisciplinary Journal
-                  of Nonlinear Science
-                </em>
-                <strong>34</strong>, 123161 (2024).
-              </p>
-
-              <a
-                class="pub-link"
-                href="https://doi.org/10.1063/5.0230848"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                DOI →
-              </a>
-
-            </div>
-
-          </article>
-
+          <span class="work-status">
+            Under review
+          </span>
 
         </div>
 
-      </div>
-
-
-      <!-- ====================================================
-           ORCID
-           ==================================================== -->
-
-      <div class="orcid-footer">
-
-        <a
-          href="https://orcid.org/0000-0002-4831-731X"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View my ORCID record →
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- ========================================================
-       TEACHING + ABOUT
-       ======================================================== -->
-
-  <section id="teaching">
-
-    <div class="container two-column">
-
-
-      <!-- TEACHING -->
-
-      <div>
-
-        <div class="section-kicker">
-          Teaching
-        </div>
-
-        <h2 class="section-title">
-          Teaching &amp; supervision
-        </h2>
-
-        <p class="section-intro">
-          I enjoy teaching across physics, climate science and
-          mathematics, with an emphasis on making complex concepts
-          intuitive and engaging.
-        </p>
-
-        <ul class="teaching-list">
-
-          <li>
-            <strong>
-              Nonlinear Systems · MSc Physics
-            </strong>
-            Exercises, active-learning activities and assessment.
-          </li>
-
-          <li>
-            <strong>
-              Climatology &amp; Meteorology · MSc Environmental Science
-            </strong>
-            Guest lectures in English on oceanography and climate
-            tipping elements.
-          </li>
-
-          <li>
-            <strong>
-              Mathematical Methods I · BSc Physics
-            </strong>
-            Teaching and exercise sessions in French.
-          </li>
-
-          <li>
-            <strong>
-              Physique Générale A · BSc Medicine
-            </strong>
-            Teaching in French.
-          </li>
-
-          <li>
-            <strong>
-              Collège du Léman
-            </strong>
-            Mathematics, physics and chemistry teaching in English
-            and French.
-          </li>
-
-        </ul>
-
-      </div>
-
-
-      <!-- ABOUT -->
-
-      <div id="about">
-
-        <div class="section-kicker">
-          About
-        </div>
-
-        <h2 class="section-title">
-          From physics to the Earth system
-        </h2>
-
-        <div class="timeline">
-
-
-          <div class="timeline-item">
-
-            <div class="timeline-date">
-              2023 — present
-            </div>
-
-            <h3>
-              PhD Researcher · University of Geneva
-            </h3>
-
-            <p>
-              Nonlinear climate dynamics, climate multistability,
-              tipping behaviour, climate sensitivity and coupled
-              Earth-system modelling.
-            </p>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <div class="timeline-date">
-              2021 — 2023
-            </div>
-
-            <h3>
-              MSc in Physics · University of Geneva
-            </h3>
-
-            <p>
-              MSc thesis on climate change velocity computation
-              applied to ecology.
-            </p>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <div class="timeline-date">
-              2018 — 2021
-            </div>
-
-            <h3>
-              BSc in Physics · University of Geneva
-            </h3>
-
-            <p>
-              Foundations in physics, mathematics and computational
-              methods.
-            </p>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <div class="timeline-date">
-              Beyond research
-            </div>
-
-            <h3>
-              Outreach &amp; scientific service
-            </h3>
-
-            <p>
-              Science communication, conference activities,
-              peer review and engagement with the wider
-              climate-science community.
-            </p>
-
-          </div>
-
-
-        </div>
-
-      </div>
+      </article>
 
 
     </div>
 
+  </div>
+
+
+  <!-- ====================================================
+       PEER-REVIEWED PUBLICATIONS — SECOND
+       ==================================================== -->
+
+  <div class="pub-section">
+
+    <h2 class="pub-section-title">
+      Peer-reviewed publications
+    </h2>
+
+
+    <div class="pub-list">
+
+
+      <!-- 01 -->
+
+      <article class="publication">
+
+        <div class="pub-number">
+          4
+        </div>
+
+        <div class="publication-content">
+
+          <h3>
+            Climate network characterization of the Atlantic
+            Meridional Overturning Circulation edge state
+          </h3>
+
+          <p class="publication-authors">
+            Laure Moinat, Reyk Börner, Valerio Lucarini,
+            Maura Brunetti, and Henk A. Dijkstra
+          </p>
+
+          <p class="publication-journal">
+            <em>Physical Review Research</em>
+            <strong>8</strong>, 033268 (2026).
+          </p>
+
+          <a
+            class="pub-link"
+            href="https://doi.org/10.1103/q9bd-4h4j"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            DOI →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- 02 -->
+
+      <article class="publication">
+
+        <div class="pub-number">
+          3
+        </div>
+
+        <div class="publication-content">
+
+          <h3>
+            Biogeodynamics-Ice sheet-Geneva-MITgcm
+            (BIG-MITgcm, v1.0): a simulation tool for
+            exploring climate states with a representation
+            of global ice sheets
+          </h3>
+
+          <p class="publication-authors">
+            Laure Moinat, Florian Franziskakis, Christian Vérard,
+            Daniel N. Goldberg, and Maura Brunetti
+          </p>
+
+          <p class="publication-journal">
+            <em>Geoscientific Model Development</em>
+            <strong>19</strong>, 4357–4384 (2026).
+          </p>
+
+          <a
+            class="pub-link"
+            href="https://doi.org/10.5194/gmd-19-4357-2026"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            DOI →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- 03 -->
+
+      <article class="publication">
+
+        <div class="pub-number">
+          2
+        </div>
+
+        <div class="publication-content">
+
+          <h3>
+            Comparing ecological relevance of climate
+            velocity indices
+          </h3>
+
+          <p class="publication-authors">
+            Laure Moinat, Iaroslav Gaponenko, Stéphane Goyette,
+            and Jérôme Kasparian
+          </p>
+
+          <p class="publication-journal">
+            <em>Scientific Reports</em>
+            <strong>16</strong>, 8797 (2026).
+          </p>
+
+          <a
+            class="pub-link"
+            href="https://doi.org/10.1038/s41598-025-32377-0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            DOI →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- 04 -->
+
+      <article class="publication">
+
+        <div class="pub-number">
+          1
+        </div>
+
+        <div class="publication-content">
+
+          <h3>
+            Tipping detection using climate networks
+          </h3>
+
+          <p class="publication-authors">
+            Laure Moinat, Jérôme Kasparian, and Maura Brunetti
+          </p>
+
+          <p class="publication-journal">
+            <em>
+              Chaos: An Interdisciplinary Journal
+              of Nonlinear Science
+            </em>
+            <strong>34</strong>, 123161 (2024).
+          </p>
+
+          <a
+            class="pub-link"
+            href="https://doi.org/10.1063/5.0230848"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            DOI →
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+
+  <!-- ====================================================
+       ORCID
+       ==================================================== -->
+
+  <div class="orcid-footer">
+
+    <a
+      href="https://orcid.org/0000-0002-4831-731X"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View my ORCID record →
+    </a>
+
+  </div>
+
+</div>
+```
+
   </section>
 
-
   <!-- ========================================================
-       AWARDS
+       AWARDS — MOVED BEFORE TEACHING + ABOUT
        ======================================================== -->
 
   <section class="awards">
 
-    <div class="container">
+```
+<div class="container">
 
-      <div class="section-kicker">
-        Recognition
+  <div class="section-kicker">
+    Recognition
+  </div>
+
+  <h2 class="section-title">
+    Selected awards &amp; grants
+  </h2>
+
+  <div class="award-grid">
+
+
+    <article class="award">
+
+      <div class="award-year">
+        2026
       </div>
 
-      <h2 class="section-title">
-        Selected awards &amp; grants
-      </h2>
+      <h3>
+        UNIGE Subside Tremplin
+      </h3>
 
-      <div class="award-grid">
+      <p>
+        CHF 30,000 · Support for academic independence.
+      </p>
 
-
-        <article class="award">
-
-          <div class="award-year">
-            2026
-          </div>
-
-          <h3>
-            UNIGE Subside Tremplin
-          </h3>
-
-          <p>
-            CHF 30,000 · Support for academic independence.
-          </p>
-
-        </article>
+    </article>
 
 
-        <article class="award">
+    <article class="award">
 
-          <div class="award-year">
-            2025
-          </div>
-
-          <h3>
-            COST Young Researcher &amp; Innovator Grant
-          </h3>
-
-          <p>
-            €1,400 · Global tipping points research.
-          </p>
-
-        </article>
-
-
-        <article class="award">
-
-          <div class="award-year">
-            2025
-          </div>
-
-          <h3>
-            EGU Outstanding Student &amp; PhD Candidate Presentation
-          </h3>
-
-          <p>
-            €2,300 · Biogeodynamical paleoclimate modelling.
-          </p>
-
-        </article>
-
-
-        <article class="award">
-
-          <div class="award-year">
-            2024
-          </div>
-
-          <h3>
-            ProClim Best Poster
-          </h3>
-
-          <p>
-            CHF 1,000 · Swiss Global Change Day.
-          </p>
-
-        </article>
-
-
+      <div class="award-year">
+        2025
       </div>
 
-    </div>
+      <h3>
+        COST Young Researcher &amp; Innovator Grant
+      </h3>
+
+      <p>
+        €1,400 · Global tipping points research.
+      </p>
+
+    </article>
+
+
+    <article class="award">
+
+      <div class="award-year">
+        2025
+      </div>
+
+      <h3>
+        EGU Outstanding Student &amp; PhD Candidate Presentation
+      </h3>
+
+      <p>
+        €2,300 · Biogeodynamical paleoclimate modelling.
+      </p>
+
+    </article>
+
+
+    <article class="award">
+
+      <div class="award-year">
+        2024
+      </div>
+
+      <h3>
+        ProClim Best Poster
+      </h3>
+
+      <p>
+        CHF 1,000 · Swiss Global Change Day.
+      </p>
+
+    </article>
+
+
+  </div>
+
+</div>
+```
 
   </section>
 
+  <!-- ========================================================
+       TEACHING + ABOUT — NOW AFTER AWARDS
+       ======================================================== -->
+
+  <section id="teaching">
+
+```
+<div class="container two-column">
+
+
+  <!-- TEACHING -->
+
+  <div>
+
+    <div class="section-kicker">
+      Teaching
+    </div>
+
+    <h2 class="section-title">
+      Teaching &amp; supervision
+    </h2>
+
+    <p class="section-intro">
+      I enjoy teaching across physics, climate science and
+      mathematics, with an emphasis on making complex concepts
+      intuitive and engaging.
+    </p>
+
+    <ul class="teaching-list">
+
+      <li>
+        <strong>
+          Nonlinear Systems · MSc Physics
+        </strong>
+        Exercises, active-learning activities and assessment.
+      </li>
+
+      <li>
+        <strong>
+          Climatology &amp; Meteorology · MSc Environmental Science
+        </strong>
+        Guest lectures in English on oceanography and climate
+        tipping elements.
+      </li>
+
+      <li>
+        <strong>
+          Mathematical Methods I · BSc Physics
+        </strong>
+        Teaching and exercise sessions in French.
+      </li>
+
+      <li>
+        <strong>
+          Physique Générale A · BSc Medicine
+        </strong>
+        Teaching in French.
+      </li>
+
+      <li>
+        <strong>
+          Collège du Léman
+        </strong>
+        Mathematics, physics and chemistry teaching in English
+        and French.
+      </li>
+
+    </ul>
+
+  </div>
+
+
+  <!-- ABOUT -->
+
+  <div id="about">
+
+    <div class="section-kicker">
+      About
+    </div>
+
+    <h2 class="section-title">
+      From physics to the Earth system
+    </h2>
+
+    <div class="timeline">
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-date">
+          2023 — present
+        </div>
+
+        <h3>
+          PhD Researcher · University of Geneva
+        </h3>
+
+        <p>
+          Nonlinear climate dynamics, climate multistability,
+          tipping behaviour, climate sensitivity and coupled
+          Earth-system modelling.
+        </p>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-date">
+          2021 — 2023
+        </div>
+
+        <h3>
+          MSc in Physics · University of Geneva
+        </h3>
+
+        <p>
+          MSc thesis on climate change velocity computation
+          applied to ecology.
+        </p>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-date">
+          2018 — 2021
+        </div>
+
+        <h3>
+          BSc in Physics · University of Geneva
+        </h3>
+
+        <p>
+          Foundations in physics, mathematics and computational
+          methods.
+        </p>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-date">
+          Beyond research
+        </div>
+
+        <h3>
+          Outreach &amp; scientific service
+        </h3>
+
+        <p>
+          Science communication, conference activities,
+          peer review and engagement with the wider
+          climate-science community.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+</div>
+```
+
+  </section>
 
   <!-- ========================================================
        CONTACT
@@ -2204,77 +2184,78 @@
     id="contact"
   >
 
-    <div class="container">
+```
+<div class="container">
 
-      <div class="contact-box">
+  <div class="contact-box">
 
-        <div class="section-kicker">
-          Contact
-        </div>
+    <div class="section-kicker">
+      Contact
+    </div>
 
-        <h2>
-          Let's talk climate dynamics.
-        </h2>
+    <h2>
+      Let's talk climate dynamics.
+    </h2>
 
-        <p>
-          I am always happy to discuss research, collaborations,
-          teaching, nonlinear climate dynamics and Earth-system science.
-        </p>
+    <p>
+      I am always happy to discuss research, collaborations,
+      teaching, nonlinear climate dynamics and Earth-system science.
+    </p>
 
-        <div class="contact-links">
-
-
-          <a
-            href="mailto:laure.moinat@unige.ch"
-          >
-            Email
-          </a>
+    <div class="contact-links">
 
 
-          <a
-            href="https://github.com/LaureMoinat"
-            target="_blank"
-            rel="noopener"
-          >
-            GitHub
-          </a>
+      <a
+        href="mailto:laure.moinat@unige.ch"
+      >
+        Email
+      </a>
 
 
-          <a
-            href="https://orcid.org/0000-0002-4831-731X"
-            target="_blank"
-            rel="noopener"
-          >
-            ORCID
-          </a>
+      <a
+        href="https://github.com/LaureMoinat"
+        target="_blank"
+        rel="noopener"
+      >
+        GitHub
+      </a>
 
 
-          <a
-            href="https://scholar.google.com/"
-            target="_blank"
-            rel="noopener"
-          >
-            Google Scholar
-          </a>
+      <a
+        href="https://orcid.org/0000-0002-4831-731X"
+        target="_blank"
+        rel="noopener"
+      >
+        ORCID
+      </a>
 
 
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener"
-          >
-            LinkedIn
-          </a>
+      <a
+        href="https://scholar.google.com/"
+        target="_blank"
+        rel="noopener"
+      >
+        Google Scholar
+      </a>
 
 
-        </div>
+      <a
+        href="https://www.linkedin.com/"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
 
-      </div>
 
     </div>
 
-  </section>
+  </div>
 
+</div>
+```
+
+  </section>
 
   <!-- ========================================================
        FOOTER
@@ -2282,20 +2263,21 @@
 
   <footer>
 
-    <div class="container footer-inner">
+```
+<div class="container footer-inner">
 
-      <div>
-        © 2026 Laure Moinat
-      </div>
+  <div>
+    © 2026 Laure Moinat
+  </div>
 
-      <div>
-        Nonlinear climate dynamics · University of Geneva
-      </div>
+  <div>
+    Nonlinear climate dynamics · University of Geneva
+  </div>
 
-    </div>
+</div>
+```
 
   </footer>
-
 
 </body>
 </html>
