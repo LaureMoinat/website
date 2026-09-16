@@ -80,10 +80,11 @@
     }
 
     .hero > .container {
-        width: calc(100% - 35px);
-        max-width: 1300px;
-        margin: 0 auto;
-      }
+      width: calc(100% - 35px);
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
 
     /* =========================================================
        NAVIGATION
@@ -115,11 +116,11 @@
       font-weight: 800;
       letter-spacing: 0.02em;
       color: var(--navy);
-      }
-    
+    }
+
     .logo span {
       color: var(--turquoise);
-      }
+    }
 
     .nav-links {
       display: flex;
@@ -206,25 +207,26 @@
     }
 
     .hero-grid {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 20px;
-    align-items: center;
+      position: relative;
+      z-index: 1;
+
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 20px;
+      align-items: center;
     }
 
-  .hero-photo {
-    width: min(100%, 650px);
-    margin-left: auto;
-  }
+    .hero-photo {
+      width: min(100%, 650px);
+      margin-left: auto;
+    }
 
-   .intro-greeting {
-  color: var(--navy);
-  font-size: 2.2rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  margin-bottom: 22px;
+    .intro-greeting {
+      color: var(--navy);
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 22px;
     }
 
     h1 {
@@ -265,14 +267,14 @@
     }
 
     .button {
-        border-radius: 16px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 11px 16px;
-        font-size: 0.9rem;
-        white-space: nowrap;
-      }
+      border-radius: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 16px;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
 
     .button-primary {
       background: var(--navy);
@@ -282,88 +284,80 @@
     .button-primary:hover {
       background: var(--blue);
       color: white;
-
       transform: translateY(-1px);
     }
 
     .button-secondary {
       border-color: #b9c9c6;
-
       color: var(--navy);
-
       background: rgba(255,255,255,0.55);
     }
 
     .button-secondary:hover {
       border-color: var(--turquoise);
-
       color: var(--blue);
-
       background: white;
     }
 
 
     /* =========================================================
-   HERO PHOTO & EDUCATION
-   ========================================================= */
+       HERO PHOTO & EDUCATION
+       ========================================================= */
 
-.hero-content {
-  max-width: 680px;
-}
+    .hero-content {
+      max-width: 680px;
+    }
 
-.hero-photo {
-  width: min(100%, 600px);
-  margin-left: auto;
-}
+    .hero-photo {
+      width: min(100%, 600px);
+      margin-left: auto;
+    }
 
-.hero-photo img {
-  width: 100%;
-  height: auto;
-  display: block;
+    .hero-photo img {
+      width: 100%;
+      height: auto;
+      display: block;
 
-  border-radius: 24px;
+      border-radius: 24px;
 
-  box-shadow:
-    0 25px 60px
-    rgba(18, 48, 71, 0.18);
+      box-shadow:
+        0 25px 60px
+        rgba(18, 48, 71, 0.18);
 
-  border: 1px solid var(--line);
-}
+      border: 1px solid var(--line);
+    }
 
-.hero-education {
-  margin: 30px 0;
-}
+    .hero-education {
+      margin: 30px 0;
+    }
 
-.hero-education h2 {
-  color: var(--navy);
+    .hero-education h2 {
+      color: var(--navy);
+      font-size: 1.25rem;
+      margin-bottom: 15px;
+    }
 
-  font-size: 1.25rem;
+    .education-item {
+      display: flex;
+      flex-direction: column;
 
-  margin-bottom: 15px;
-}
+      margin-bottom: 12px;
 
-.education-item {
-  display: flex;
-  flex-direction: column;
+      padding-left: 15px;
 
-  margin-bottom: 12px;
+      border-left: 3px solid var(--turquoise);
+    }
 
-  padding-left: 15px;
+    .education-item strong {
+      color: var(--navy);
+      font-size: 0.98rem;
+    }
 
-  border-left: 3px solid var(--turquoise);
-}
+    .education-item span {
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
 
-.education-item strong {
-  color: var(--navy);
-
-  font-size: 0.98rem;
-}
-
-.education-item span {
-  color: var(--muted);
-
-  font-size: 0.88rem;
-}
 
     /* =========================================================
        SECTIONS
@@ -429,25 +423,25 @@
 
     .research-card {
       position: relative;
-    
+
       height: 350px;
-    
+
       padding: 10px;
-    
+
       border: 1px solid var(--line);
-    
+
       border-radius: var(--radius);
-    
+
       background: white;
-    
+
       box-shadow:
         0 8px 25px
         rgba(18,48,71,0.04);
-    
+
       transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
-    
+
       display: flex;
       flex-direction: column;
     }
@@ -462,58 +456,61 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-    
+
       width: 38px;
       height: 38px;
-    
+
       margin-right: 12px;
-    
+
       border-radius: 11px;
-    
+
       background: #e4f2ef;
-    
+
       color: var(--blue);
-    
+
       font-weight: 850;
-    
+
       font-size: 0.9rem;
-    
+
       vertical-align: middle;
     }
+
     .research-card-content h3 {
       margin-top: 0;
     }
+
     .research-image-link {
       display: block;
-    
+
       width: 100%;
       height: 150px;
-    
+
       margin: 18px 0;
-    
+
       border-radius: 14px;
-    
+
       overflow: hidden;
-    
+
       flex-shrink: 0;
     }
-    
+
     .research-image {
       width: 100%;
       height: 100%;
-    
+
       object-fit: contain;
-    
+
       display: block;
-    
+
       border-radius: 14px;
-    
+
       transition: transform 0.25s ease;
     }
-    
+
     .research-image-link:hover .research-image {
       transform: scale(1.03);
     }
+
     .research-card:nth-child(2)
     .card-number {
       background: #f8e8e2;
@@ -539,8 +536,10 @@
       font-size: 0.94rem;
       margin-top: 0;
     }
+
+
     /* =========================================================
-       FEATURED PROJECT
+       FEATURED PROJECT / NEWS
        ========================================================= */
 
     .feature {
@@ -617,7 +616,7 @@
       margin-bottom: 10px;
       font-weight: 700;
     }
-    
+
     .news-title + .section-kicker {
       color: #72d0c5;
       font-size: 0.85rem;
@@ -626,21 +625,20 @@
       letter-spacing: 0.12em;
       font-weight: 600;
     }
-    
+
     .news-visual {
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    
+
     .news-image {
       width: 100%;
       max-width: 520px;
       height: auto;
       display: block;
     }
-    
-    
+
     .branch {
       width: 76%;
       height: 76%;
@@ -683,176 +681,200 @@
        PUBLICATIONS
        ========================================================= */
 
-    /* =========================================================
-   PUBLICATIONS
-   ========================================================= */
+    /*
+       IMPORTANT:
+       Both peer-reviewed publications and manuscripts use
+       the exact same transparent layout.
+    */
 
-/* =========================================================
-   PUBLICATIONS
-   ========================================================= */
+    .publications {
+      background: #f1f5f1;
+    }
 
-.publications {
-  background: #f1f5f1;
-}
+    .pub-section {
+      margin-top: 45px;
+    }
 
-.pub-section {
-  margin-top: 45px;
-}
+    .pub-section-title {
+      color: var(--navy);
 
-.pub-section-title {
-  color: var(--navy);
-  font-size: 1.35rem;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  letter-spacing: -0.02em;
-}
+      font-size: 1.35rem;
 
-.pub-list,
-.work-list {
-  display: grid;
-  gap: 0;
-}
+      line-height: 1.2;
 
-/* Same style for publications and manuscripts */
+      margin-bottom: 20px;
 
-.publication,
-.work-item {
-  display: grid;
-  grid-template-columns: 55px 1fr;
-  gap: 18px;
-  padding: 24px 0;
-  border-top: 1px solid var(--line);
-  background: transparent;
-  align-items: start;
-}
+      letter-spacing: -0.02em;
+    }
 
-.publication:last-child,
-.work-item:last-child {
-  border-bottom: 1px solid var(--line);
-}
+    .pub-list,
+    .work-list {
+      display: grid;
+      gap: 0;
+    }
 
-/* Number */
+    /*
+       NO WHITE BACKGROUND
+       NO CARD
+       NO SHADOW
+       NO ROUNDED CORNERS
+    */
 
-.pub-number,
-.work-number {
-  font-size: 0.9rem;
-  font-weight: 850;
-  letter-spacing: 0.04em;
-  padding-top: 3px;
-}
+    .publication,
+    .work-item {
+      display: grid;
 
-.pub-number {
-  color: var(--turquoise);
-}
+      grid-template-columns: 55px 1fr;
 
-.work-number {
-  color: var(--coral);
-}
+      gap: 18px;
 
-/* Titles */
+      padding: 24px 0;
 
-.publication-content h3,
-.work-item h3 {
-  color: var(--navy);
-  font-size: 1.04rem;
-  line-height: 1.5;
-  font-weight: 650;
-  margin-bottom: 7px;
-}
+      border-top: 1px solid var(--line);
 
-/* Authors */
+      background: transparent;
 
-.publication-authors,
-.work-authors {
-  color: #52666e;
-  font-size: 0.89rem;
-  line-height: 1.55;
-  margin-bottom: 6px;
-}
+      border-radius: 0;
 
-/* Journal information */
+      box-shadow: none;
 
-.publication-journal {
-  color: var(--muted);
-  font-size: 0.89rem;
-  line-height: 1.55;
-}
+      align-items: start;
 
-.publication-journal em {
-  color: var(--ink);
-  font-style: italic;
-}
+      transition: none;
+    }
 
-.publication-journal strong {
-  color: var(--navy);
-  font-weight: 750;
-}
+    .publication:last-child,
+    .work-item:last-child {
+      border-bottom: 1px solid var(--line);
+    }
 
-/* DOI */
+    /*
+       Remove all old card hover behaviour.
+    */
 
-.pub-link {
-  display: inline-block;
-  margin-top: 9px;
-  font-size: 0.82rem;
-  font-weight: 750;
-}
+    .publication:hover,
+    .work-item:hover {
+      transform: none;
+      box-shadow: none;
+      border-color: var(--line);
+      background: transparent;
+    }
 
-.pub-link:hover {
-  text-decoration: underline;
-}
+    /* Numbers */
 
-/* Status */
+    .pub-number,
+    .work-number {
+      font-size: 0.9rem;
 
-.work-status {
-  display: inline-block;
-  color: var(--coral);
-  font-size: 0.76rem;
-  font-weight: 800;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-}
+      font-weight: 850;
 
+      letter-spacing: 0.04em;
 
-/* =========================================================
-   ORCID FOOTER
-   ========================================================= */
+      padding-top: 3px;
+    }
 
-.orcid-footer {
-  text-align: right;
-  margin-top: 25px;
-  font-size: 0.84rem;
-  font-weight: 700;
-}
+    .pub-number {
+      color: var(--turquoise);
+    }
 
+    .work-number {
+      color: var(--coral);
+    }
 
-/* =========================================================
-   MOBILE
-   ========================================================= */
+    /* Titles */
 
-@media (max-width: 650px) {
+    .publication-content h3,
+    .work-item h3 {
+      color: var(--navy);
 
-  .publication,
-  .work-item {
-    grid-template-columns: 38px 1fr;
-    gap: 12px;
-    padding: 21px 0;
-  }
+      font-size: 1.04rem;
 
-  .publication-content h3,
-  .work-item h3 {
-    font-size: 1rem;
-  }
+      line-height: 1.5;
 
-  .publication-authors,
-  .publication-journal,
-  .work-authors {
-    font-size: 0.86rem;
-  }
+      font-weight: 650;
 
-  .orcid-footer {
-    text-align: center;
-  }
-}
+      margin-bottom: 7px;
+    }
+
+    /* Authors */
+
+    .publication-authors,
+    .work-authors {
+      color: #52666e;
+
+      font-size: 0.89rem;
+
+      line-height: 1.55;
+
+      margin-bottom: 6px;
+    }
+
+    /* Journal information */
+
+    .publication-journal {
+      color: var(--muted);
+
+      font-size: 0.89rem;
+
+      line-height: 1.55;
+    }
+
+    .publication-journal em {
+      color: var(--ink);
+
+      font-style: italic;
+    }
+
+    .publication-journal strong {
+      color: var(--navy);
+
+      font-weight: 750;
+    }
+
+    /* DOI */
+
+    .pub-link {
+      display: inline-block;
+
+      margin-top: 9px;
+
+      font-size: 0.82rem;
+
+      font-weight: 750;
+    }
+
+    .pub-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Manuscript status */
+
+    .work-status {
+      display: inline-block;
+
+      color: var(--coral);
+
+      font-size: 0.76rem;
+
+      font-weight: 800;
+
+      letter-spacing: 0.07em;
+
+      text-transform: uppercase;
+    }
+
+    /* ORCID */
+
+    .orcid-footer {
+      text-align: right;
+
+      margin-top: 25px;
+
+      font-size: 0.84rem;
+
+      font-weight: 700;
+    }
+
 
     /* =========================================================
        TEACHING + ABOUT
@@ -1141,39 +1163,38 @@
        TABLET
        ========================================================= */
 
-  @media (max-width: 900px) {
+    @media (max-width: 900px) {
 
-  .hero-grid,
-  .feature-grid,
-  .two-column {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    padding: 40px 0 50px;
-  }
-
-  .hero-photo {
-    width: min(80vw, 500px);
-    margin: 10px auto 0;
-  }
-
-  .hero-buttons {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-
-  .research-grid {
+      .hero-grid,
+      .feature-grid,
+      .two-column {
         grid-template-columns: 1fr;
       }
 
- .award-grid {
+      .hero {
+        padding: 40px 0 50px;
+      }
+
+      .hero-photo {
+        width: min(80vw, 500px);
+        margin: 10px auto 0;
+      }
+
+      .hero-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .award-grid {
         grid-template-columns:
           repeat(2, 1fr);
       }
 
- .feature-grid {
+      .feature-grid {
         gap: 35px;
       }
     }
@@ -1217,10 +1238,39 @@
         grid-template-columns: 1fr;
       }
 
-      .publication {
+      /*
+         Mobile publication layout:
+         number above text, still transparent.
+      */
+
+      .publication,
+      .work-item {
         grid-template-columns: 1fr;
 
         gap: 5px;
+
+        padding: 21px 0;
+      }
+
+      .pub-number,
+      .work-number {
+        padding-top: 0;
+        margin-bottom: 3px;
+      }
+
+      .publication-content h3,
+      .work-item h3 {
+        font-size: 1rem;
+      }
+
+      .publication-authors,
+      .publication-journal,
+      .work-authors {
+        font-size: 0.86rem;
+      }
+
+      .orcid-footer {
+        text-align: center;
       }
 
       .footer-inner {
@@ -1229,180 +1279,6 @@
         text-align: center;
       }
     }
-/* =========================================================
-   ORCID PUBLICATIONS
-   ========================================================= */
-
-.publication {
-  display: grid;
-
-  grid-template-columns: 92px 1fr;
-
-  gap: 25px;
-
-  padding: 23px 25px;
-
-  border: 1px solid var(--line);
-
-  background: white;
-
-  border-radius: 16px;
-
-  align-items: start;
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    border-color 0.2s ease;
-}
-
-.publication:hover {
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 10px 28px
-    rgba(18, 48, 71, 0.07);
-
-  border-color: #cbdad5;
-}
-
-.pub-year {
-  color: var(--turquoise);
-
-  font-size: 0.88rem;
-
-  font-weight: 850;
-
-  padding-top: 3px;
-
-  white-space: nowrap;
-}
-
-.publication h3 {
-  color: var(--navy);
-
-  font-size: 1.02rem;
-
-  line-height: 1.5;
-
-  font-weight: 650;
-
-  margin-bottom: 7px;
-}
-
-.publication-authors {
-  color: #52666e;
-
-  font-size: 0.89rem;
-
-  line-height: 1.55;
-
-  margin-bottom: 4px;
-}
-
-.publication-journal {
-  color: var(--muted);
-
-  font-size: 0.89rem;
-
-  line-height: 1.55;
-}
-
-.publication-journal em {
-  color: var(--ink);
-
-  font-style: italic;
-}
-
-.pub-link {
-  display: inline-block;
-
-  margin-top: 9px;
-
-  font-size: 0.82rem;
-
-  font-weight: 750;
-}
-
-.pub-link:hover {
-  text-decoration: underline;
-}
-
-.publication-loading {
-  padding: 25px;
-
-  color: var(--muted);
-
-  text-align: center;
-
-  font-size: 0.92rem;
-
-  border: 1px dashed var(--line);
-
-  border-radius: 16px;
-
-  background: rgba(255,255,255,0.7);
-}
-
-.publication-error {
-  padding: 25px;
-
-  color: var(--muted);
-
-  text-align: center;
-
-  border: 1px solid var(--line);
-
-  border-radius: 16px;
-
-  background: white;
-}
-
-.orcid-footer {
-  text-align: right;
-
-  margin-top: 22px;
-
-  font-size: 0.84rem;
-
-  font-weight: 700;
-}
-
-
-/* =========================================================
-   MOBILE PUBLICATIONS
-   ========================================================= */
-
-@media (max-width: 650px) {
-
-  .publication {
-    grid-template-columns: 1fr;
-
-    gap: 5px;
-
-    padding: 20px;
-  }
-
-  .pub-year {
-    padding-top: 0;
-
-    margin-bottom: 3px;
-  }
-
-  .publication h3 {
-    font-size: 1rem;
-  }
-
-  .publication-authors,
-  .publication-journal {
-    font-size: 0.86rem;
-  }
-
-  .orcid-footer {
-    text-align: center;
-  }
-
-}
 
   </style>
 </head>
@@ -1456,125 +1332,125 @@
   </nav>
 
 
-
   <!-- ========================================================
        HERO
        ======================================================== -->
 
-  <!-- HERO -->
+  <header class="hero" id="top">
 
-<header class="hero" id="top">
+    <div class="container">
 
-  <div class="container">
+      <div class="hero-grid">
 
-    <!-- Text + photo -->
-    <div class="hero-grid">
+        <div class="hero-content">
 
-      <div class="hero-content">
+          <div class="intro-greeting">
+            Hi there, I am Laure!
+          </div>
 
-        <div class="intro-greeting">
-          Hi there, I am Laure!
+          <p class="hero-lead">
+            I am currently a PhD researcher at the University of Geneva in physics studying how the
+            Earth system can occupy multiple climate states — and how
+            feedbacks, stability and nonlinear dynamics shape transitions
+            between them.
+          </p>
+
+          <div class="hero-education">
+
+            <h2>Education</h2>
+
+            <div class="education-item">
+              <strong>PhD in Physics - Nonlinear climate dynamics</strong>
+              <span>University of Geneva · 2023–present</span>
+            </div>
+
+            <div class="education-item">
+              <strong>Master of Science in physics, specialization in applied physics</strong>
+              <span>University of Geneva · 2021–2023</span>
+            </div>
+
+            <div class="education-item">
+              <strong>Bachelor of Science in physics</strong>
+              <span>University of Geneva · 2018–2021</span>
+            </div>
+
+          </div>
+
         </div>
 
-        <p class="hero-lead">
-          I am currently a PhD researcher at the University of Geneva in physics studying how the
-          Earth system can occupy multiple climate states — and how
-          feedbacks, stability and nonlinear dynamics shape transitions
-          between them.
-        </p>
 
-        <div class="hero-education">
+        <div class="hero-photo">
 
-          <h2>Education</h2>
-
-          <div class="education-item">
-            <strong>PhD in Physics - Nonlinear climate dynamics</strong>
-            <span>University of Geneva · 2023–present</span>
-          </div>
-
-          <div class="education-item">
-            <strong>Master of Science in physics, specialization in applied physics</strong>
-            <span>University of Geneva · 2021–2023</span>
-          </div>
-
-          <div class="education-item">
-            <strong>Bachelor of Science in physics</strong>
-            <span>University of Geneva · 2018–2021</span>
-          </div>
+          <img
+            src="laure.png"
+            alt="Laure Moinat"
+          >
 
         </div>
 
       </div>
 
-      <div class="hero-photo">
 
-        <img
-          src="laure.png"
-          alt="Laure Moinat"
+      <!-- Buttons -->
+
+      <div class="hero-buttons">
+
+        <a
+          class="button button-primary"
+          href="#research"
         >
+          Explore my research
+        </a>
+
+        <a
+          class="button button-secondary"
+          href="https://scholar.google.com/citations?user=m_wviaoAAAAJ&hl=en&oi=ao"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google Scholar
+        </a>
+
+        <a
+          class="button button-secondary"
+          href="https://orcid.org/0000-0002-4831-731X"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ORCID
+        </a>
+
+        <a
+          class="button button-secondary"
+          href="https://www.linkedin.com/in/laure-moinat-a71088219/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          class="button button-secondary"
+          href="Laure Moinat_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Full CV
+        </a>
+
+        <a
+          class="button button-secondary"
+          href="#contact"
+        >
+          Get in touch
+        </a>
 
       </div>
 
     </div>
 
-    <!-- Buttons across the full width -->
-    <div class="hero-buttons">
+  </header>
 
-      <a
-        class="button button-primary"
-        href="#research"
-      >
-        Explore my research
-      </a>
-
-      <a
-        class="button button-secondary"
-        href="https://scholar.google.com/citations?user=m_wviaoAAAAJ&hl=en&oi=ao"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Google Scholar
-      </a>
-
-      <a
-        class="button button-secondary"
-        href="https://orcid.org/0000-0002-4831-731X"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        ORCID
-      </a>
-
-      <a
-        class="button button-secondary"
-        href="https://www.linkedin.com/in/laure-moinat-a71088219/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        LinkedIn
-      </a>
-
-      <a
-        class="button button-secondary"
-        href="Laure Moinat_CV.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Full CV
-      </a>
-
-      <a
-        class="button button-secondary"
-        href="#contact"
-      >
-        Get in touch
-      </a>
-
-    </div>
-
-  </div>
-
-</header>
 
   <!-- ========================================================
        RESEARCH
@@ -1587,456 +1463,468 @@
 
     <div class="container">
 
-
       <div class="section-kicker">
         Research
       </div>
-
 
       <h2 class="section-title">
         Earth’s multiple climate states: emergence, stability, and transitions
       </h2>
 
-
       <p class="section-intro">
-
-        My research focuses on how nonlinear interactions within the Earth system give rise to multiple climate states 
-        and tipping behavior. I combine coupled climate modeling, nonlinear dynamics, and paleoclimate data to understand the 
-        emergence and stability of Earth’s multiple equilibrium states, their transitions, 
-        and their consistency with paleoclimate evidence. I also use climate network approaches to characterize the spatial 
+        My research focuses on how nonlinear interactions within the Earth system give rise to multiple climate states
+        and tipping behavior. I combine coupled climate modeling, nonlinear dynamics, and paleoclimate data to understand the
+        emergence and stability of Earth’s multiple equilibrium states, their transitions,
+        and their consistency with paleoclimate evidence. I also use climate network approaches to characterize the spatial
         signatures of climate states and identify early warning signals of approaching transitions.
-        
       </p>
-
 
 
       <div class="research-grid">
 
-  <article class="research-card">
 
-    <h3>
-      <span class="card-number">01</span>
-      BIG-MITgcm 
-    </h3>
+        <article class="research-card">
 
-    <a
-      href="https://gmd.copernicus.org/articles/19/4357/2026/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="research-image-link"
-    >
-      <img
-        src="bigmitgcm.png"
-        alt="BIG-MITgcm climate model"
-        class="research-image"
-      >
-    </a>
+          <h3>
+            <span class="card-number">01</span>
+            BIG-MITgcm
+          </h3>
 
-    <p>
-      Developed efficient coupled climate models that represent
-      the atmosphere, ocean, sea ice, vegetation, and ice sheets.
-    </p>
+          <a
+            href="https://gmd.copernicus.org/articles/19/4357/2026/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="research-image-link"
+          >
+            <img
+              src="bigmitgcm.png"
+              alt="BIG-MITgcm climate model"
+              class="research-image"
+            >
+          </a>
 
-  </article>
+          <p>
+            Developed efficient coupled climate models that represent
+            the atmosphere, ocean, sea ice, vegetation, and ice sheets.
+          </p>
 
-
-  <article class="research-card">
-
-    <h3>
-      <span class="card-number">02</span>
-      Multiple climate states
-    </h3>
-
-    <a
-      href="https://meetingorganizer.copernicus.org/EGU26/EGU26-6664.html"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="research-image-link"
-    >
-      <img
-        src="multiple_states.png"
-        alt="Multiple climate states"
-        class="research-image"
-      >
-    </a>
-
-    <p>
-      Characterising multiple climate states, from Snowball to Hothouse Earth, and understanding 
-      their role in Earth’s climate evolution over the last million years and into the future.
-    </p>
-
-  </article>
+        </article>
 
 
-  <article class="research-card">
+        <article class="research-card">
 
-    <h3>
-      <span class="card-number">03</span>
-      Climate networks
-    </h3>
+          <h3>
+            <span class="card-number">02</span>
+            Multiple climate states
+          </h3>
 
-    <a
-      href="https://journals.aps.org/prresearch/abstract/10.1103/q9bd-4h4j"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="research-image-link"
-    >
-      <img
-        src="image_networks.png"
-        alt="Climate networks"
-        class="research-image"
-      >
-    </a>
+          <a
+            href="https://meetingorganizer.copernicus.org/EGU26/EGU26-6664.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="research-image-link"
+          >
+            <img
+              src="multiple_states.png"
+              alt="Multiple climate states"
+              class="research-image"
+            >
+          </a>
 
-    <p>
-      Developing methods to characterize transitions between
-      climate states and identify early warning signals of
-      approaching transitions.
-    </p>
+          <p>
+            Characterising multiple climate states, from Snowball to Hothouse Earth, and understanding
+            their role in Earth’s climate evolution over the last million years and into the future.
+          </p>
 
-  </article>
+        </article>
 
-</div>
-      
+
+        <article class="research-card">
+
+          <h3>
+            <span class="card-number">03</span>
+            Climate networks
+          </h3>
+
+          <a
+            href="https://journals.aps.org/prresearch/abstract/10.1103/q9bd-4h4j"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="research-image-link"
+          >
+            <img
+              src="image_networks.png"
+              alt="Climate networks"
+              class="research-image"
+            >
+          </a>
+
+          <p>
+            Developing methods to characterize transitions between
+            climate states and identify early warning signals of
+            approaching transitions.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
   </section>
 
 
-
-
   <!-- ========================================================
-NEWS
-======================================================== -->
-<section class="feature" id="news">
-  <div class="container feature-grid">
+       NEWS
+       ======================================================== -->
 
-    <div>
-      <div class="news-title">
-        News
+  <section class="feature" id="news">
+
+    <div class="container feature-grid">
+
+      <div>
+
+        <div class="news-title">
+          News
+        </div>
+
+        <div class="section-kicker">
+          Most recent publication: Climate network characterization of the Atlantic Meridional Overturning Circulation edge state
+        </div>
+
+        <p>
+          This work characterizes the spatial signature of the AMOC edge state,
+          also known as the Melancholia state, which lies on the boundary separating the ON and OFF states of the circulation.
+          Using climate networks, we identify a distinct signature of this state, marked by enhanced
+          teleconnections between the northern and southern Atlantic and increased network connectivity.
+
+          These results provide a potential way to identify the AMOC edge state in state-of-the-art
+          climate models and, potentially, in observations. They may also contribute to the development
+          of early warning signals for an approaching AMOC collapse.
+        </p>
+
+        <p>
+          The figure on the right shows the strength of the links between the different regions.
+          The edge state, in its two convective modes, is characterized by the emergence of teleconnections with the
+          34° region at the surface. This shows that this unstable state exhibits a distinct spatial signature.
+        </p>
+
+        <a
+          class="button button-secondary"
+          href="https://doi.org/10.1103/q9bd-4h4j"
+          target="_blank"
+          rel="noopener"
+        >
+          Read the publication
+        </a>
+
       </div>
 
-      <div class="section-kicker">
-        Most recent publication: Climate network characterization of the Atlantic Meridional Overturning Circulation edge state
+
+      <div class="news-visual">
+
+        <img
+          src="news.png"
+          alt="Most recent publication"
+          class="news-image"
+        >
+
       </div>
 
-      <p>
-        This work characterizes the spatial signature of the AMOC edge state, 
-        also known as the Melancholia state, which lies on the boundary separating the ON and OFF states of the circulation. 
-        Using climate networks, we identify a distinct signature of this state, marked by enhanced 
-        teleconnections between the northern and southern Atlantic and increased network connectivity.
-
-        These results provide a potential way to identify the AMOC edge state in state-of-the-art 
-        climate models and, potentially, in observations. They may also contribute to the development 
-        of early warning signals for an approaching AMOC collapse.
-
-        
-      </p>
-
-      <p>
-        The figure on the right shows the strength of the links between the different regions. 
-        The edge state, in its two convective modes, is characterized by the emergence of teleconnections with the 
-        34° region at the surface. This shows that this unstable state exhibits a distinct spatial signature.
-
-      </p>
-
-      <a class="button button-secondary"
-         href="https://doi.org/10.1103/q9bd-4h4j"
-         target="_blank"
-         rel="noopener">
-        Read the publication
-      </a>
     </div>
 
-    <div class="news-visual">
-      <img src="news.png" alt="Most recent publication" class="news-image">
-    </div>
+  </section>
 
-  </div>
-</section>
 
   <!-- ========================================================
        PUBLICATIONS
        ======================================================== -->
 
+  <section
+    class="publications"
+    id="publications"
+  >
+
+    <div class="container">
 
 
-<!-- ========================================================
-     PUBLICATIONS
-     ======================================================== -->
-
-<section class="publications" id="publications">
-
-  <div class="container">
-
-    <div class="section-kicker">
-      Publications
-    </div>
-
-    <h2 class="section-title">
-      Peer-reviewed publications
-    </h2>
+      <div class="section-kicker">
+        Publications
+      </div>
 
 
-    <!-- ====================================================
-         PEER-REVIEWED
-         ==================================================== -->
-
-    <div class="pub-section">
-
-      <div class="pub-list">
+      <h2 class="section-title">
+        Peer-reviewed publications
+      </h2>
 
 
-        <!-- 01 -->
+      <!-- ====================================================
+           PEER-REVIEWED
+           ==================================================== -->
 
-        <article class="publication">
+      <div class="pub-section">
 
-          <div class="pub-number">
-            01
-          </div>
-
-          <div class="publication-content">
-
-            <h3>
-              Climate network characterization of the Atlantic
-              Meridional Overturning Circulation edge state
-            </h3>
-
-            <p class="publication-authors">
-              Laure Moinat, Reyk Börner, Valerio Lucarini,
-              Maura Brunetti, and Henk A. Dijkstra
-            </p>
-
-            <p class="publication-journal">
-              <em>Physical Review Research</em>
-              <strong>8</strong>, 033268 (2026).
-            </p>
-
-            <a
-              class="pub-link"
-              href="https://doi.org/10.1103/q9bd-4h4j"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              DOI →
-            </a>
-
-          </div>
-
-        </article>
+        <div class="pub-list">
 
 
-        <!-- 02 -->
+          <!-- 01 -->
 
-        <article class="publication">
+          <article class="publication">
 
-          <div class="pub-number">
-            02
-          </div>
+            <div class="pub-number">
+              01
+            </div>
 
-          <div class="publication-content">
+            <div class="publication-content">
 
-            <h3>
-              Biogeodynamics-Ice sheet-Geneva-MITgcm
-              (BIG-MITgcm, v1.0): a simulation tool for
-              exploring climate states with a representation
-              of global ice sheets
-            </h3>
+              <h3>
+                Climate network characterization of the Atlantic
+                Meridional Overturning Circulation edge state
+              </h3>
 
-            <p class="publication-authors">
-              Laure Moinat, Florian Franziskakis, Christian Vérard,
-              Daniel N. Goldberg, and Maura Brunetti
-            </p>
+              <p class="publication-authors">
+                Laure Moinat, Reyk Börner, Valerio Lucarini,
+                Maura Brunetti, and Henk A. Dijkstra
+              </p>
 
-            <p class="publication-journal">
-              <em>Geoscientific Model Development</em>
-              <strong>19</strong>, 4357–4384 (2026).
-            </p>
+              <p class="publication-journal">
+                <em>Physical Review Research</em>
+                <strong>8</strong>, 033268 (2026).
+              </p>
 
-            <a
-              class="pub-link"
-              href="https://doi.org/10.5194/gmd-19-4357-2026"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              DOI →
-            </a>
+              <a
+                class="pub-link"
+                href="https://doi.org/10.1103/q9bd-4h4j"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                DOI →
+              </a>
 
-          </div>
+            </div>
 
-        </article>
+          </article>
 
 
-        <!-- 03 -->
+          <!-- 02 -->
 
-        <article class="publication">
+          <article class="publication">
 
-          <div class="pub-number">
-            03
-          </div>
+            <div class="pub-number">
+              02
+            </div>
 
-          <div class="publication-content">
+            <div class="publication-content">
 
-            <h3>
-              Comparing ecological relevance of climate
-              velocity indices
-            </h3>
+              <h3>
+                Biogeodynamics-Ice sheet-Geneva-MITgcm
+                (BIG-MITgcm, v1.0): a simulation tool for
+                exploring climate states with a representation
+                of global ice sheets
+              </h3>
 
-            <p class="publication-authors">
-              Laure Moinat, Iaroslav Gaponenko, Stéphane Goyette,
-              and Jérôme Kasparian
-            </p>
+              <p class="publication-authors">
+                Laure Moinat, Florian Franziskakis, Christian Vérard,
+                Daniel N. Goldberg, and Maura Brunetti
+              </p>
 
-            <p class="publication-journal">
-              <em>Scientific Reports</em>
-              <strong>16</strong>, 8797 (2026).
-            </p>
+              <p class="publication-journal">
+                <em>Geoscientific Model Development</em>
+                <strong>19</strong>, 4357–4384 (2026).
+              </p>
 
-            <a
-              class="pub-link"
-              href="https://doi.org/10.1038/s41598-025-32377-0"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              DOI →
-            </a>
+              <a
+                class="pub-link"
+                href="https://doi.org/10.5194/gmd-19-4357-2026"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                DOI →
+              </a>
 
-          </div>
+            </div>
 
-        </article>
+          </article>
 
 
-        <!-- 04 -->
+          <!-- 03 -->
 
-        <article class="publication">
+          <article class="publication">
 
-          <div class="pub-number">
-            04
-          </div>
+            <div class="pub-number">
+              03
+            </div>
 
-          <div class="publication-content">
+            <div class="publication-content">
 
-            <h3>
-              Tipping detection using climate networks
-            </h3>
+              <h3>
+                Comparing ecological relevance of climate
+                velocity indices
+              </h3>
 
-            <p class="publication-authors">
-              Laure Moinat, Jérôme Kasparian, and Maura Brunetti
-            </p>
+              <p class="publication-authors">
+                Laure Moinat, Iaroslav Gaponenko, Stéphane Goyette,
+                and Jérôme Kasparian
+              </p>
 
-            <p class="publication-journal">
-              <em>Chaos: An Interdisciplinary Journal
-              of Nonlinear Science</em>
-              <strong>34</strong>, 123161 (2024).
-            </p>
+              <p class="publication-journal">
+                <em>Scientific Reports</em>
+                <strong>16</strong>, 8797 (2026).
+              </p>
 
-            <a
-              class="pub-link"
-              href="https://doi.org/10.1063/5.0230848"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              DOI →
-            </a>
+              <a
+                class="pub-link"
+                href="https://doi.org/10.1038/s41598-025-32377-0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                DOI →
+              </a>
 
-          </div>
+            </div>
 
-        </article>
+          </article>
+
+
+          <!-- 04 -->
+
+          <article class="publication">
+
+            <div class="pub-number">
+              04
+            </div>
+
+            <div class="publication-content">
+
+              <h3>
+                Tipping detection using climate networks
+              </h3>
+
+              <p class="publication-authors">
+                Laure Moinat, Jérôme Kasparian, and Maura Brunetti
+              </p>
+
+              <p class="publication-journal">
+                <em>
+                  Chaos: An Interdisciplinary Journal
+                  of Nonlinear Science
+                </em>
+                <strong>34</strong>, 123161 (2024).
+              </p>
+
+              <a
+                class="pub-link"
+                href="https://doi.org/10.1063/5.0230848"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                DOI →
+              </a>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+
+      <!-- ====================================================
+           IN PREPARATION / UNDER REVIEW
+           ==================================================== -->
+
+      <div class="pub-section">
+
+        <h3 class="pub-section-title">
+          In preparation / Under review
+        </h3>
+
+
+        <div class="work-list">
+
+
+          <!-- Manuscript 01 -->
+
+          <article class="work-item">
+
+            <div class="work-number">
+              01
+            </div>
+
+            <div>
+
+              <h3>
+                Title of manuscript in preparation
+              </h3>
+
+              <p class="work-authors">
+                Laure Moinat, Co-author Name, and Co-author Name
+              </p>
+
+              <span class="work-status">
+                In preparation
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <!-- Manuscript 02 -->
+
+          <article class="work-item">
+
+            <div class="work-number">
+              02
+            </div>
+
+            <div>
+
+              <h3>
+                Title of manuscript under review
+              </h3>
+
+              <p class="work-authors">
+                Laure Moinat, Co-author Name, and Co-author Name
+              </p>
+
+              <span class="work-status">
+                Under review
+              </span>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+
+      <!-- ====================================================
+           ORCID
+           ==================================================== -->
+
+      <div class="orcid-footer">
+
+        <a
+          href="https://orcid.org/0000-0002-4831-731X"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View my ORCID record →
+        </a>
 
       </div>
 
     </div>
 
-
-    <!-- ====================================================
-         IN PREPARATION / UNDER REVIEW
-         ==================================================== -->
-
-    <div class="pub-section">
-
-      <h3 class="pub-section-title">
-        In preparation / Under review
-      </h3>
-
-      <div class="work-list">
+  </section>
 
 
-        <!-- Example manuscript 01 -->
-
-        <article class="work-item">
-
-          <div class="work-number">
-            01
-          </div>
-
-          <div>
-
-            <h3>
-              Title of manuscript in preparation
-            </h3>
-
-            <p class="work-authors">
-              Laure Moinat, Co-author Name, and Co-author Name
-            </p>
-
-            <span class="work-status">
-              In preparation
-            </span>
-
-          </div>
-
-        </article>
-
-
-        <!-- Example manuscript 02 -->
-
-        <article class="work-item">
-
-          <div class="work-number">
-            02
-          </div>
-
-          <div>
-
-            <h3>
-              Title of manuscript under review
-            </h3>
-
-            <p class="work-authors">
-              Laure Moinat, Co-author Name, and Co-author Name
-            </p>
-
-            <span class="work-status">
-              Under review
-            </span>
-
-          </div>
-
-        </article>
-
-
-      </div>
-
-    </div>
-
-
-    <!-- ====================================================
-         ORCID
-         ==================================================== -->
-
-    <div class="orcid-footer">
-
-      <a
-        href="https://orcid.org/0000-0002-4831-731X"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        View my ORCID record →
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
   <!-- ========================================================
        TEACHING + ABOUT
        ======================================================== -->
@@ -2054,85 +1942,58 @@ NEWS
           Teaching
         </div>
 
-
         <h2 class="section-title">
           Teaching &amp; supervision
         </h2>
 
-
         <p class="section-intro">
-
           I enjoy teaching across physics, climate science and
           mathematics, with an emphasis on making complex concepts
           intuitive and engaging.
-
         </p>
-
 
         <ul class="teaching-list">
 
-
           <li>
-
             <strong>
               Nonlinear Systems · MSc Physics
             </strong>
-
             Exercises, active-learning activities and assessment.
-
           </li>
 
-
           <li>
-
             <strong>
               Climatology &amp; Meteorology · MSc Environmental Science
             </strong>
-
             Guest lectures in English on oceanography and climate
             tipping elements.
-
           </li>
 
-
           <li>
-
             <strong>
               Mathematical Methods I · BSc Physics
             </strong>
-
             Teaching and exercise sessions in French.
-
           </li>
 
-
           <li>
-
             <strong>
               Physique Générale A · BSc Medicine
             </strong>
-
             Teaching in French.
-
           </li>
 
-
           <li>
-
             <strong>
               Collège du Léman
             </strong>
-
             Mathematics, physics and chemistry teaching in English
             and French.
-
           </li>
-
 
         </ul>
 
       </div>
-
 
 
       <!-- ABOUT -->
@@ -2143,11 +2004,9 @@ NEWS
           About
         </div>
 
-
         <h2 class="section-title">
           From physics to the Earth system
         </h2>
-
 
         <div class="timeline">
 
@@ -2163,15 +2022,12 @@ NEWS
             </h3>
 
             <p>
-
               Nonlinear climate dynamics, climate multistability,
               tipping behaviour, climate sensitivity and coupled
               Earth-system modelling.
-
             </p>
 
           </div>
-
 
 
           <div class="timeline-item">
@@ -2185,14 +2041,11 @@ NEWS
             </h3>
 
             <p>
-
               MSc thesis on climate change velocity computation
               applied to ecology.
-
             </p>
 
           </div>
-
 
 
           <div class="timeline-item">
@@ -2206,14 +2059,11 @@ NEWS
             </h3>
 
             <p>
-
               Foundations in physics, mathematics and computational
               methods.
-
             </p>
 
           </div>
-
 
 
           <div class="timeline-item">
@@ -2227,11 +2077,9 @@ NEWS
             </h3>
 
             <p>
-
               Science communication, conference activities,
               peer review and engagement with the wider
               climate-science community.
-
             </p>
 
           </div>
@@ -2247,7 +2095,6 @@ NEWS
   </section>
 
 
-
   <!-- ========================================================
        AWARDS
        ======================================================== -->
@@ -2256,16 +2103,13 @@ NEWS
 
     <div class="container">
 
-
       <div class="section-kicker">
         Recognition
       </div>
 
-
       <h2 class="section-title">
         Selected awards &amp; grants
       </h2>
-
 
       <div class="award-grid">
 
@@ -2287,7 +2131,6 @@ NEWS
         </article>
 
 
-
         <article class="award">
 
           <div class="award-year">
@@ -2305,7 +2148,6 @@ NEWS
         </article>
 
 
-
         <article class="award">
 
           <div class="award-year">
@@ -2321,7 +2163,6 @@ NEWS
           </p>
 
         </article>
-
 
 
         <article class="award">
@@ -2348,7 +2189,6 @@ NEWS
   </section>
 
 
-
   <!-- ========================================================
        CONTACT
        ======================================================== -->
@@ -2360,32 +2200,23 @@ NEWS
 
     <div class="container">
 
-
       <div class="contact-box">
-
 
         <div class="section-kicker">
           Contact
         </div>
 
-
         <h2>
           Let's talk climate dynamics.
         </h2>
 
-
         <p>
-
           I am always happy to discuss research, collaborations,
           teaching, nonlinear climate dynamics and Earth-system science.
-
         </p>
-
 
         <div class="contact-links">
 
-
-          <!-- Change these links to your personal profiles -->
 
           <a
             href="mailto:laure.moinat@unige.ch"
@@ -2439,7 +2270,6 @@ NEWS
   </section>
 
 
-
   <!-- ========================================================
        FOOTER
        ======================================================== -->
@@ -2459,743 +2289,6 @@ NEWS
     </div>
 
   </footer>
-
-<script>
-/* =========================================================
-   ORCID PUBLICATIONS
-   Laure Moinat
-   ORCID: 0000-0002-4831-731X
-   ========================================================= */
-
-
-
-/* ---------------------------------------------------------
-   Load publications
-   --------------------------------------------------------- */
-
-async function loadORCIDPublications() {
-
-  const container =
-    document.getElementById("orcid-publications");
-
-  try {
-
-    /*
-     * First request:
-     * Get all public works associated with the ORCID record.
-     */
-
-    const worksResponse = await fetch(
-      `${ORCID_API}/works`,
-      {
-        headers: {
-          "Accept": "application/json"
-        }
-      }
-    );
-
-    if (!worksResponse.ok) {
-      throw new Error(
-        `ORCID works request failed: ${worksResponse.status}`
-      );
-    }
-
-    const worksData =
-      await worksResponse.json();
-
-
-    /*
-     * ORCID groups different versions of the same work.
-     *
-     * We take one representative work from each group.
-     */
-
-    const groups = worksData.group || [];
-
-    const works = [];
-
-    groups.forEach(group => {
-
-      if (
-        group["work-summary"] &&
-        group["work-summary"].length > 0
-      ) {
-
-        /*
-         * Prefer a journal article if one is available.
-         */
-
-        const journalArticle =
-          group["work-summary"].find(
-            work =>
-              work.type === "JOURNAL_ARTICLE"
-          );
-
-        const selected =
-          journalArticle ||
-          group["work-summary"][0];
-
-        works.push(selected);
-      }
-
-    });
-
-
-    /*
-     * Keep only journal articles.
-     */
-
-    const journalWorks =
-      works.filter(work => {
-
-        const type =
-          (work.type || "").toLowerCase();
-
-        return (
-          type === "journal_article" ||
-          type === "journal-article"
-        );
-
-      });
-
-
-    /*
-     * Retrieve detailed information for each publication.
-     *
-     * The summary endpoint does not always contain the
-     * complete author list.
-     */
-
-    const detailedWorks =
-      await Promise.all(
-        journalWorks.map(async work => {
-
-          try {
-
-            const response =
-              await fetch(
-                `${ORCID_API}/work/${work["put-code"]}`,
-                {
-                  headers: {
-                    "Accept": "application/json"
-                  }
-                }
-              );
-
-            if (!response.ok) {
-              return work;
-            }
-
-            return await response.json();
-
-          } catch (error) {
-
-            console.warn(
-              "Could not retrieve detailed ORCID work:",
-              error
-            );
-
-            return work;
-          }
-
-        })
-      );
-
-
-    /*
-     * Sort newest → oldest.
-     */
-
-    detailedWorks.sort(
-      (a, b) => {
-
-        const yearA =
-          getPublicationYear(a) || 0;
-
-        const yearB =
-          getPublicationYear(b) || 0;
-
-        return yearB - yearA;
-
-      }
-    );
-
-
-    /*
-     * Render publications.
-     */
-
-    if (detailedWorks.length === 0) {
-
-      container.innerHTML = `
-        <div class="publication-error">
-          No peer-reviewed journal articles were found
-          in the public ORCID record.
-        </div>
-      `;
-
-      return;
-    }
-
-
-    container.innerHTML = "";
-
-    detailedWorks.forEach(work => {
-
-      const publication =
-        createPublicationElement(work);
-
-      container.appendChild(publication);
-
-    });
-
-
-  } catch (error) {
-
-    console.error(
-      "ORCID publication loading error:",
-      error
-    );
-
-    container.innerHTML = `
-      <div class="publication-error">
-        Publications could not be loaded automatically.
-        <br><br>
-        <a
-          href="https://orcid.org/${ORCID_ID}"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View publications on ORCID →
-        </a>
-      </div>
-    `;
-
-  }
-
-}
-
-
-/* ---------------------------------------------------------
-   Get publication year
-   --------------------------------------------------------- */
-
-function getPublicationYear(work) {
-
-  const date =
-    work["publication-date"];
-
-  if (
-    date &&
-    date.year &&
-    date.year.value
-  ) {
-
-    return date.year.value;
-
-  }
-
-  return null;
-}
-
-
-/* ---------------------------------------------------------
-   Get publication title
-   --------------------------------------------------------- */
-
-function getPublicationTitle(work) {
-
-  try {
-
-    return (
-      work.title &&
-      work.title.title &&
-      work.title.title.value
-    ) || "Untitled publication";
-
-  } catch {
-
-    return "Untitled publication";
-
-  }
-
-}
-
-
-/* ---------------------------------------------------------
-   Get journal name
-   --------------------------------------------------------- */
-
-function getJournalName(work) {
-
-  /*
-   * ORCID stores the journal under journal-title.
-   */
-
-  try {
-
-    return (
-      work["journal-title"] &&
-      work["journal-title"].value
-    ) || "";
-
-  } catch {
-
-    return "";
-
-  }
-
-}
-
-
-/* ---------------------------------------------------------
-   Get authors
-   --------------------------------------------------------- */
-
-function getAuthors(work) {
-
-  const contributors =
-    work.contributors &&
-    work.contributors.contributor;
-
-  if (
-    !contributors ||
-    !Array.isArray(contributors)
-  ) {
-
-    return [];
-
-  }
-
-
-  return contributors
-    .filter(contributor => {
-
-      /*
-       * Keep actual authors.
-       *
-       * Some ORCID records use the contributor role
-       * "author". If no role is supplied, we still
-       * keep the contributor.
-       */
-
-      const role =
-        contributor["contributor-attributes"] &&
-        contributor["contributor-attributes"].contributor-role;
-
-      return (
-        !role ||
-        role.toLowerCase() === "author"
-      );
-
-    })
-    .map(contributor => {
-
-      /*
-       * Prefer the contributor's published/credit name.
-       */
-
-      if (
-        contributor["credit-name"] &&
-        contributor["credit-name"].value
-      ) {
-
-        return contributor["credit-name"].value;
-
-      }
-
-
-      /*
-       * Otherwise use given + family name.
-       */
-
-      const name =
-        contributor["contributor-name"];
-
-      if (!name) {
-        return null;
-      }
-
-      const given =
-        name["given-names"] &&
-        name["given-names"].value
-          ? name["given-names"].value
-          : "";
-
-      const family =
-        name["family-name"] &&
-        name["family-name"].value
-          ? name["family-name"].value
-          : "";
-
-      return `${given} ${family}`.trim();
-
-    })
-    .filter(Boolean);
-
-}
-
-
-/* ---------------------------------------------------------
-   Get volume
-   --------------------------------------------------------- */
-
-function getVolume(work) {
-
-  /*
-   * ORCID sometimes provides this inside citation.
-   *
-   * If the structured field is unavailable, we leave
-   * it empty rather than inventing information.
-   */
-
-  if (
-    work["journal-title"] &&
-    work["journal-title"].value
-  ) {
-
-    /*
-     * Some records provide volume through the citation
-     * field rather than as a separate structured property.
-     */
-
-  }
-
-  return extractCitationPart(
-    work,
-    "volume"
-  );
-
-}
-
-
-/* ---------------------------------------------------------
-   Get page range
-   --------------------------------------------------------- */
-
-function getPages(work) {
-
-  /*
-   * ORCID may store pages/article numbers inside
-   * citation metadata.
-   */
-
-  return extractCitationPart(
-    work,
-    "pages"
-  );
-
-}
-
-
-/* ---------------------------------------------------------
-   Extract citation information
-   --------------------------------------------------------- */
-
-function extractCitationPart(
-  work,
-  requestedPart
-) {
-
-  /*
-   * First check structured citation metadata.
-   */
-
-  const citation =
-    work.citation;
-
-  if (
-    citation &&
-    citation.citation
-  ) {
-
-    const text =
-      citation.citation;
-
-    if (requestedPart === "volume") {
-
-      const volumeMatch =
-        text.match(
-          /\b(?:vol\.?|volume)\s*(\d+)/i
-        );
-
-      if (volumeMatch) {
-        return volumeMatch[1];
-      }
-
-    }
-
-    if (requestedPart === "pages") {
-
-      const pagesMatch =
-        text.match(
-          /\b(?:pp?\.?|pages?)\s*([\d–-]+(?:\s*[-–]\s*[\d]+)?)/i
-        );
-
-      if (pagesMatch) {
-        return pagesMatch[1];
-      }
-
-    }
-
-  }
-
-
-  return "";
-
-}
-
-
-/* ---------------------------------------------------------
-   Get DOI
-   --------------------------------------------------------- */
-
-function getDOI(work) {
-
-  const identifiers =
-    work["external-ids"] &&
-    work["external-ids"]["external-id"];
-
-  if (
-    !identifiers ||
-    !Array.isArray(identifiers)
-  ) {
-
-    return null;
-
-  }
-
-
-  const doi =
-    identifiers.find(identifier => {
-
-      const type =
-        identifier["external-id-type"];
-
-      return (
-        type &&
-        type.toLowerCase() === "doi"
-      );
-
-    });
-
-
-  if (
-    doi &&
-    doi["external-id-value"]
-  ) {
-
-    return doi["external-id-value"];
-
-  }
-
-
-  return null;
-
-}
-
-
-/* ---------------------------------------------------------
-   Create publication HTML
-   --------------------------------------------------------- */
-
-function createPublicationElement(work) {
-
-  const article =
-    document.createElement("article");
-
-  article.className =
-    "publication";
-
-
-  const year =
-    getPublicationYear(work) || "";
-
-
-  const title =
-    getPublicationTitle(work);
-
-
-  const journal =
-    getJournalName(work);
-
-
-  const authors =
-    getAuthors(work);
-
-
-  const volume =
-    getVolume(work);
-
-
-  const pages =
-    getPages(work);
-
-
-  const doi =
-    getDOI(work);
-
-
-  /*
-   * Format author list.
-   */
-
-  let authorText =
-    authors.join(", ");
-
-
-  /*
-   * If the author list is unavailable in ORCID,
-   * show a graceful fallback rather than displaying
-   * incorrect information.
-   */
-
-  if (!authorText) {
-
-    authorText =
-      "Authors listed on ORCID";
-
-  }
-
-
-  /*
-   * Build journal citation.
-   *
-   * Example:
-   *
-   * Physical Review Research 8, 033268.
-   */
-
-  let citationParts = "";
-
-
-  if (journal) {
-
-    citationParts +=
-      `<em>${escapeHTML(journal)}</em>`;
-
-  }
-
-
-  if (volume) {
-
-    citationParts +=
-      ` ${escapeHTML(volume)}`;
-
-  }
-
-
-  if (pages) {
-
-    citationParts +=
-      `, ${escapeHTML(pages)}`;
-
-  }
-
-
-  if (citationParts) {
-
-    citationParts += ".";
-
-  }
-
-
-  /*
-   * DOI link.
-   */
-
-  let doiHTML = "";
-
-
-  if (doi) {
-
-    const cleanDOI =
-      doi
-        .replace(/^https?:\/\/doi.org\//i, "")
-        .replace(/^doi:\s*/i, "");
-
-    doiHTML = `
-      <a
-        class="pub-link"
-        href="https://doi.org/${encodeURIComponent(cleanDOI)}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        DOI →
-      </a>
-    `;
-
-  }
-
-
-  /*
-   * Final publication card.
-   */
-
-  article.innerHTML = `
-
-    <div class="pub-year">
-      ${escapeHTML(String(year))}
-    </div>
-
-    <div>
-
-      <h3>
-        ${escapeHTML(title)}
-      </h3>
-
-      <p class="publication-authors">
-        ${escapeHTML(authorText)}
-      </p>
-
-      ${
-        citationParts
-          ? `
-            <p class="publication-journal">
-              ${citationParts}
-            </p>
-          `
-          : ""
-      }
-
-      ${doiHTML}
-
-    </div>
-
-  `;
-
-
-  return article;
-
-}
-
-
-/* ---------------------------------------------------------
-   Escape HTML
-   --------------------------------------------------------- */
-
-function escapeHTML(value) {
-
-  return String(value)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
-
-}
-
-
-/* ---------------------------------------------------------
-   Start
-   --------------------------------------------------------- */
-
-document.addEventListener(
-  "DOMContentLoaded",
-  loadORCIDPublications
-);
-
-</script>
 
 
 </body>
