@@ -743,59 +743,53 @@
       transition: none;
     }
 
-    .publication:last-child,
-    .work-item:last-child {
-      border-bottom: 1px solid var(--line);
-    }
+    .publications h2 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 2.5rem;
+}
 
-    /*
-       Remove all old card hover behaviour.
-    */
+.publication,
+.work-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 2rem;
+    padding: 1.8rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    background: transparent;
+}
 
-    .publication:hover,
-    .work-item:hover {
-      transform: none;
-      box-shadow: none;
-      border-color: var(--line);
-      background: transparent;
-    }
+.publication:last-child,
+.work-item:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
 
-    /* Numbers */
+.pub-number,
+.work-number {
+    font-family: 'DM Mono', monospace;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 0.25rem;
+}
 
-    .pub-number,
-    .work-number {
-      font-size: 0.9rem;
+/* SAME FONT AND SIZE FOR BOTH SECTIONS */
+.publication-content h3,
+.work-item h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.35rem;
+    line-height: 1.45;
+    font-weight: 500;
+    margin: 0 0 0.6rem;
+    color: var(--dark);
+}
 
-      font-weight: 850;
-
-      letter-spacing: 0.04em;
-
-      padding-top: 3px;
-    }
-
-    .pub-number {
-      color: var(--turquoise);
-    }
-
-    .work-number {
-      color: var(--coral);
-    }
-
-    /* Titles */
-
-    .publication-content h3,
-    .work-item h3 {
-      color: var(--navy);
-
-      font-size: 1.04rem;
-
-      line-height: 1.5;
-
-      font-weight: 650;
-
-      margin-bottom: 7px;
-    }
-
+.publication-content p,
+.work-item p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0.3rem 0;
+}
     /* Authors */
 
     .publication-authors,
