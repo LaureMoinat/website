@@ -683,74 +683,247 @@
        PUBLICATIONS
        ========================================================= */
 
-    .publications {
-      background: #f1f5f1;
-    }
+    /* =========================================================
+   PUBLICATIONS
+   ========================================================= */
 
-    .pub-list {
-      display: grid;
+.publications {
+  background: #f1f5f1;
+}
 
-      gap: 15px;
-    }
+.pub-section {
+  margin-top: 45px;
+}
 
-    .publication {
-      display: grid;
+.pub-section-title {
+  color: var(--navy);
 
-      grid-template-columns:
-        92px
-        1fr;
+  font-size: 1.35rem;
 
-      gap: 25px;
+  line-height: 1.2;
 
-      padding: 23px 25px;
+  margin-bottom: 20px;
 
-      border:
-        1px solid
-        var(--line);
+  letter-spacing: -0.02em;
+}
 
-      background: white;
+.pub-list {
+  display: grid;
+  gap: 0;
+}
 
-      border-radius: 16px;
+.publication {
+  display: grid;
 
-      align-items: start;
-    }
+  grid-template-columns: 55px 1fr;
 
-    .pub-year {
-      color: var(--turquoise);
+  gap: 18px;
 
-      font-size: 0.88rem;
+  padding: 24px 0;
 
-      font-weight: 850;
+  border-top: 1px solid var(--line);
 
-      padding-top: 2px;
-    }
+  background: transparent;
 
-    .publication h3 {
-      color: var(--navy);
+  align-items: start;
+}
 
-      font-size: 1.02rem;
+.publication:last-child {
+  border-bottom: 1px solid var(--line);
+}
 
-      line-height: 1.45;
+.pub-number {
+  color: var(--turquoise);
 
-      margin-bottom: 6px;
-    }
+  font-size: 0.9rem;
 
-    .publication p {
-      color: var(--muted);
+  font-weight: 850;
 
-      font-size: 0.88rem;
-    }
+  letter-spacing: 0.04em;
 
-    .pub-link {
-      display: inline-block;
+  padding-top: 3px;
+}
 
-      margin-top: 8px;
+.publication-content h3 {
+  color: var(--navy);
 
-      font-size: 0.82rem;
+  font-size: 1.04rem;
 
-      font-weight: 750;
-    }
+  line-height: 1.5;
 
+  font-weight: 650;
+
+  margin-bottom: 7px;
+}
+
+.publication-authors {
+  color: #52666e;
+
+  font-size: 0.89rem;
+
+  line-height: 1.55;
+
+  margin-bottom: 4px;
+}
+
+.publication-journal {
+  color: var(--muted);
+
+  font-size: 0.89rem;
+
+  line-height: 1.55;
+}
+
+.publication-journal em {
+  color: var(--ink);
+
+  font-style: italic;
+}
+
+.publication-journal strong {
+  color: var(--navy);
+
+  font-weight: 750;
+}
+
+.pub-link {
+  display: inline-block;
+
+  margin-top: 9px;
+
+  font-size: 0.82rem;
+
+  font-weight: 750;
+}
+
+.pub-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   IN PREPARATION / UNDER REVIEW
+   ========================================================= */
+
+.work-list {
+  display: grid;
+
+  gap: 0;
+}
+
+.work-item {
+  display: grid;
+
+  grid-template-columns: 55px 1fr;
+
+  gap: 18px;
+
+  padding: 24px 0;
+
+  border-top: 1px solid var(--line);
+
+  align-items: start;
+}
+
+.work-item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.work-number {
+  color: var(--coral);
+
+  font-size: 0.9rem;
+
+  font-weight: 850;
+
+  letter-spacing: 0.04em;
+
+  padding-top: 3px;
+}
+
+.work-item h3 {
+  color: var(--navy);
+
+  font-size: 1.04rem;
+
+  line-height: 1.5;
+
+  font-weight: 650;
+
+  margin-bottom: 7px;
+}
+
+.work-authors {
+  color: #52666e;
+
+  font-size: 0.89rem;
+
+  line-height: 1.55;
+
+  margin-bottom: 6px;
+}
+
+.work-status {
+  display: inline-block;
+
+  color: var(--coral);
+
+  font-size: 0.76rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.07em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   ORCID FOOTER
+   ========================================================= */
+
+.orcid-footer {
+  text-align: right;
+
+  margin-top: 25px;
+
+  font-size: 0.84rem;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   MOBILE PUBLICATIONS
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+  .publication,
+  .work-item {
+    grid-template-columns: 38px 1fr;
+
+    gap: 12px;
+
+    padding: 21px 0;
+  }
+
+  .publication-content h3,
+  .work-item h3 {
+    font-size: 1rem;
+  }
+
+  .publication-authors,
+  .publication-journal,
+  .work-authors {
+    font-size: 0.86rem;
+  }
+
+  .orcid-footer {
+    text-align: center;
+  }
+
+}
 
     /* =========================================================
        TEACHING + ABOUT
@@ -1657,138 +1830,271 @@ NEWS
 
 
 
+<!-- ========================================================
+     PUBLICATIONS
+     ======================================================== -->
+
 <section class="publications" id="publications">
+
   <div class="container">
-    <div class="section-kicker">Peer-reviewed publications</div>
-    <h2 class="section-title">Peer-reviewed publications</h2>
 
-    <div class="pub-list" id="publications-list">
+    <div class="section-kicker">
+      Publications
+    </div>
 
-      <!-- 2026 -->
-      <article class="publication">
-        <div class="pub-year">2026</div>
+    <h2 class="section-title">
+      Peer-reviewed publications
+    </h2>
 
-        <div class="publication-content">
-          <h3>
-            Climate network characterization of the Atlantic Meridional
-            Overturning Circulation edge state
-          </h3>
 
-          <p class="publication-authors">
-            Laure Moinat, Reyk Börner, Valerio Lucarini, Maura Brunetti,
-            and Henk A. Dijkstra
-          </p>
+    <!-- ====================================================
+         PEER-REVIEWED
+         ==================================================== -->
 
-          <p class="publication-journal">
-            <em>Physical Review Research</em>
-            <strong>8</strong>, 033268 (2026).
-          </p>
+    <div class="pub-section">
 
-          <a
-            class="pub-link"
-            href="https://doi.org/10.1103/q9bd-4h4j"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            DOI →
-          </a>
-        </div>
-      </article>
+      <div class="pub-list">
 
-      <!-- 2026 -->
-      <article class="publication">
-        <div class="pub-year">2026</div>
 
-        <div class="publication-content">
-          <h3>
-            Biogeodynamics-Ice sheet-Geneva-MITgcm (BIG-MITgcm, v1.0):
-            a simulation tool for exploring climate states with a
-            representation of global ice sheets
-          </h3>
+        <!-- 01 -->
 
-          <p class="publication-authors">
-            Laure Moinat, Florian Franziskakis, Christian Vérard,
-            Daniel N. Goldberg, and Maura Brunetti
-          </p>
+        <article class="publication">
 
-          <p class="publication-journal">
-            <em>Geoscientific Model Development</em>
-            <strong>19</strong>, 4357–4384 (2026).
-          </p>
+          <div class="pub-number">
+            01
+          </div>
 
-          <a
-            class="pub-link"
-            href="https://doi.org/10.5194/gmd-19-4357-2026"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            DOI →
-          </a>
-        </div>
-      </article>
+          <div class="publication-content">
 
-      <!-- 2026 -->
-      <article class="publication">
-        <div class="pub-year">2026</div>
+            <h3>
+              Climate network characterization of the Atlantic
+              Meridional Overturning Circulation edge state
+            </h3>
 
-        <div class="publication-content">
-          <h3>
-            Comparing ecological relevance of climate velocity indices
-          </h3>
+            <p class="publication-authors">
+              Laure Moinat, Reyk Börner, Valerio Lucarini,
+              Maura Brunetti, and Henk A. Dijkstra
+            </p>
 
-          <p class="publication-authors">
-            Laure Moinat, Iaroslav Gaponenko, Stéphane Goyette,
-            and Jérôme Kasparian
-          </p>
+            <p class="publication-journal">
+              <em>Physical Review Research</em>
+              <strong>8</strong>, 033268 (2026).
+            </p>
 
-          <p class="publication-journal">
-            <em>Scientific Reports</em>
-            <strong>16</strong>, 8797 (2026).
-          </p>
+            <a
+              class="pub-link"
+              href="https://doi.org/10.1103/q9bd-4h4j"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DOI →
+            </a>
 
-          <a
-            class="pub-link"
-            href="https://doi.org/10.1038/s41598-025-32377-0"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            DOI →
-          </a>
-        </div>
-      </article>
+          </div>
 
-      <!-- 2024 -->
-      <article class="publication">
-        <div class="pub-year">2024</div>
+        </article>
 
-        <div class="publication-content">
-          <h3>
-            Tipping detection using climate networks
-          </h3>
 
-          <p class="publication-authors">
-            Laure Moinat, Jérôme Kasparian, and Maura Brunetti
-          </p>
+        <!-- 02 -->
 
-          <p class="publication-journal">
-            <em>Chaos: An Interdisciplinary Journal of Nonlinear Science</em>
-            <strong>34</strong>, 123161 (2024).
-          </p>
+        <article class="publication">
 
-          <a
-            class="pub-link"
-            href="https://doi.org/10.1063/5.0230848"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            DOI →
-          </a>
-        </div>
-      </article>
+          <div class="pub-number">
+            02
+          </div>
+
+          <div class="publication-content">
+
+            <h3>
+              Biogeodynamics-Ice sheet-Geneva-MITgcm
+              (BIG-MITgcm, v1.0): a simulation tool for
+              exploring climate states with a representation
+              of global ice sheets
+            </h3>
+
+            <p class="publication-authors">
+              Laure Moinat, Florian Franziskakis, Christian Vérard,
+              Daniel N. Goldberg, and Maura Brunetti
+            </p>
+
+            <p class="publication-journal">
+              <em>Geoscientific Model Development</em>
+              <strong>19</strong>, 4357–4384 (2026).
+            </p>
+
+            <a
+              class="pub-link"
+              href="https://doi.org/10.5194/gmd-19-4357-2026"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DOI →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- 03 -->
+
+        <article class="publication">
+
+          <div class="pub-number">
+            03
+          </div>
+
+          <div class="publication-content">
+
+            <h3>
+              Comparing ecological relevance of climate
+              velocity indices
+            </h3>
+
+            <p class="publication-authors">
+              Laure Moinat, Iaroslav Gaponenko, Stéphane Goyette,
+              and Jérôme Kasparian
+            </p>
+
+            <p class="publication-journal">
+              <em>Scientific Reports</em>
+              <strong>16</strong>, 8797 (2026).
+            </p>
+
+            <a
+              class="pub-link"
+              href="https://doi.org/10.1038/s41598-025-32377-0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DOI →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- 04 -->
+
+        <article class="publication">
+
+          <div class="pub-number">
+            04
+          </div>
+
+          <div class="publication-content">
+
+            <h3>
+              Tipping detection using climate networks
+            </h3>
+
+            <p class="publication-authors">
+              Laure Moinat, Jérôme Kasparian, and Maura Brunetti
+            </p>
+
+            <p class="publication-journal">
+              <em>Chaos: An Interdisciplinary Journal
+              of Nonlinear Science</em>
+              <strong>34</strong>, 123161 (2024).
+            </p>
+
+            <a
+              class="pub-link"
+              href="https://doi.org/10.1063/5.0230848"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DOI →
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
 
     </div>
 
+
+    <!-- ====================================================
+         IN PREPARATION / UNDER REVIEW
+         ==================================================== -->
+
+    <div class="pub-section">
+
+      <h3 class="pub-section-title">
+        In preparation / Under review
+      </h3>
+
+      <div class="work-list">
+
+
+        <!-- Example manuscript 01 -->
+
+        <article class="work-item">
+
+          <div class="work-number">
+            01
+          </div>
+
+          <div>
+
+            <h3>
+              Title of manuscript in preparation
+            </h3>
+
+            <p class="work-authors">
+              Laure Moinat, Co-author Name, and Co-author Name
+            </p>
+
+            <span class="work-status">
+              In preparation
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- Example manuscript 02 -->
+
+        <article class="work-item">
+
+          <div class="work-number">
+            02
+          </div>
+
+          <div>
+
+            <h3>
+              Title of manuscript under review
+            </h3>
+
+            <p class="work-authors">
+              Laure Moinat, Co-author Name, and Co-author Name
+            </p>
+
+            <span class="work-status">
+              Under review
+            </span>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- ====================================================
+         ORCID
+         ==================================================== -->
+
     <div class="orcid-footer">
+
       <a
         href="https://orcid.org/0000-0002-4831-731X"
         target="_blank"
@@ -1796,8 +2102,11 @@ NEWS
       >
         View my ORCID record →
       </a>
+
     </div>
+
   </div>
+
 </section>
   <!-- ========================================================
        TEACHING + ABOUT
