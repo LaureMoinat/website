@@ -941,40 +941,59 @@
       gap: 60px;
     }
 
-    .teaching-list {
-      list-style: none;
+   .teaching-list,
+.supervision-list {
+  display: grid;
+  gap: 0;
+}
 
-      display: grid;
+.teaching-item,
+.supervision-item {
+  display: block;
 
-      gap: 15px;
-    }
+  padding: 20px 0;
 
-    .teaching-list li {
-      padding: 17px 19px;
+  border-top: 1px solid var(--line);
 
-      border-left:
-        4px solid
-        var(--turquoise);
+  background: transparent;
 
-      background: #f2f6f3;
+  text-decoration: none;
+}
 
-      border-radius:
-        0
-        12px
-        12px
-        0;
+.teaching-item:last-child,
+.supervision-item:last-child {
+  border-bottom: 1px solid var(--line);
+}
 
-      color: #465b63;
-    }
+.teaching-item h3,
+.supervision-item h3 {
+  color: var(--navy);
 
-    .teaching-list strong {
-      display: block;
+  font-size: 1.05rem;
 
-      color: var(--navy);
+  line-height: 1.4;
 
-      margin-bottom: 3px;
-    }
+  margin: 0 0 6px;
+}
 
+.teaching-item p,
+.supervision-item p {
+  color: var(--muted);
+
+  font-size: 0.88rem;
+
+  line-height: 1.6;
+
+  margin: 0;
+}
+
+.supervision-block {
+  margin-top: 55px;
+}
+
+.supervision-item:hover {
+  background: transparent;
+}
     .timeline {
       border-left:
         2px solid
@@ -2093,20 +2112,26 @@
      TEACHING + OUTREACH
      ======================================================== -->
 
+<!-- ========================================================
+     TEACHING + SUPERVISION + OUTREACH
+     ======================================================== -->
+
 <section id="teaching">
 
   <div class="container two-column">
 
-    <!-- TEACHING -->
+    <!-- TEACHING + SUPERVISION -->
 
     <div>
+
+      <!-- TEACHING -->
 
       <div class="section-kicker">
         Teaching
       </div>
 
       <h2 class="section-title">
-        Teaching &amp; supervision
+        Teaching
       </h2>
 
       <p class="section-intro">
@@ -2115,46 +2140,111 @@
         intuitive and engaging.
       </p>
 
-      <ul class="teaching-list">
+      <div class="teaching-list">
 
-        <li>
-          <strong>
+        <div class="teaching-item">
+
+          <h3>
             Nonlinear Systems · MSc Physics
-          </strong>
-          Exercises, active-learning activities and assessment.
-        </li>
+          </h3>
 
-        <li>
-          <strong>
+          <p>
+            Exercises, active-learning activities and assessment.
+          </p>
+
+        </div>
+
+        <div class="teaching-item">
+
+          <h3>
             Climatology &amp; Meteorology · MSc Environmental Science
-          </strong>
-          Guest lectures in English on oceanography and climate
-          tipping elements.
-        </li>
+          </h3>
 
-        <li>
-          <strong>
+          <p>
+            Guest lectures in English on oceanography and climate
+            tipping elements.
+          </p>
+
+        </div>
+
+        <div class="teaching-item">
+
+          <h3>
             Mathematical Methods I · BSc Physics
-          </strong>
-          Teaching and exercise sessions in French.
-        </li>
+          </h3>
 
-        <li>
-          <strong>
+          <p>
+            Teaching and exercise sessions in French.
+          </p>
+
+        </div>
+
+        <div class="teaching-item">
+
+          <h3>
             Physique Générale A · BSc Medicine
-          </strong>
-          Teaching in French.
-        </li>
+          </h3>
 
-        <li>
-          <strong>
+          <p>
+            Teaching in French.
+          </p>
+
+        </div>
+
+        <div class="teaching-item">
+
+          <h3>
             Collège du Léman
-          </strong>
-          Mathematics, physics and chemistry teaching in English
-          and French.
-        </li>
+          </h3>
 
-      </ul>
+          <p>
+            Mathematics, physics and chemistry teaching in English
+            and French.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- SUPERVISION -->
+
+      <div class="supervision-block">
+
+        <div class="section-kicker">
+          Supervision
+        </div>
+
+        <h2 class="section-title">
+          Student supervision
+        </h2>
+
+        <div class="supervision-list">
+
+          <a
+            href="https://archive-ouverte.unige.ch/unige:193882"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="supervision-item"
+          >
+
+            <div>
+
+              <h3>
+                Modelling climate tipping-point cascade: the interlinked evolution of ocean circulation and Greenland ice sheet
+              </h3>
+
+              <p>
+                Thomas Vitalis Lucet · Master thesis · 2026
+              </p>
+
+            </div>
+
+          </a>
+
+        </div>
+
+      </div>
 
     </div>
 
