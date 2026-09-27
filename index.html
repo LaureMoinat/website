@@ -973,37 +973,37 @@
        AWARDS
        ========================================================= */
 
-    .award {
-  background: white;
+   .award {
+  display: grid;
 
-  border:
-    1px solid
-    #e2dfd4;
+  grid-template-columns: 55px 1fr;
 
-  border-radius: 17px;
+  gap: 18px;
 
-  padding: 22px;
+  padding: 24px 0;
+
+  border-top: 1px solid var(--line);
+
+  background: transparent;
+
+  border-radius: 0;
+
+  box-shadow: none;
 
   text-decoration: none;
 
-  display: block;
+  transition: none;
+}
 
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    border-color 0.2s ease;
-
-  cursor: pointer;
+.award:last-child {
+  border-bottom: 1px solid var(--line);
 }
 
 .award:hover {
-  transform: translateY(-4px);
-
-  box-shadow:
-    0 12px 30px
-    rgba(18, 48, 71, 0.10);
-
-  border-color: var(--turquoise);
+  background: transparent;
+  transform: none;
+  box-shadow: none;
+  border-color: var(--line);
 }
 
 .award-year {
@@ -1013,13 +1013,15 @@
 
   font-weight: 850;
 
-  margin-bottom: 8px;
+  padding-top: 4px;
+
+  margin-bottom: 0;
 }
 
 .award h3 {
   color: var(--navy);
 
-  font-size: 0.98rem;
+  font-size: 1.05rem;
 
   line-height: 1.4;
 
@@ -1029,9 +1031,10 @@
 .award p {
   color: var(--muted);
 
-  font-size: 0.83rem;
-}
+  font-size: 0.88rem;
 
+  margin: 0;
+}
     /* =========================================================
        CONTACT
        ========================================================= */
@@ -1179,9 +1182,10 @@
       }
 
       .award-grid {
-        grid-template-columns:
-          repeat(2, 1fr);
-      }
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
 
       .feature-grid {
         gap: 35px;
