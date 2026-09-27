@@ -975,9 +975,7 @@
 
    .award {
   display: grid;
-
   grid-template-columns: 55px 1fr;
-
   gap: 18px;
 
   padding: 24px 0;
@@ -985,13 +983,10 @@
   border-top: 1px solid var(--line);
 
   background: transparent;
-
   border-radius: 0;
-
   box-shadow: none;
 
   text-decoration: none;
-
   transition: none;
 }
 
@@ -1003,29 +998,22 @@
   background: transparent;
   transform: none;
   box-shadow: none;
-  border-color: var(--line);
 }
 
 .award-year {
   color: var(--coral);
-
   font-size: 0.78rem;
-
   font-weight: 850;
-
   padding-top: 4px;
-
-  margin-bottom: 0;
 }
 
 .award h3 {
   color: var(--navy);
 
   font-size: 1.05rem;
-
   line-height: 1.4;
 
-  margin-bottom: 6px;
+  margin: 0 0 6px;
 }
 
 .award p {
@@ -1284,7 +1272,7 @@
 
   <nav class="nav">
 
-```
+
 <div class="container nav-inner">
 
   <a class="logo" href="#top">
@@ -1320,7 +1308,6 @@
   </ul>
 
 </div>
-```
 
   </nav>
 
@@ -1330,7 +1317,7 @@
 
   <header class="hero" id="top">
 
-```
+
 <div class="container">
 
   <div class="hero-grid">
@@ -1441,7 +1428,7 @@
   </div>
 
 </div>
-```
+
 
   </header>
 
@@ -1454,7 +1441,7 @@
     id="research"
   >
 
-```
+
 <div class="container">
 
   <div class="section-kicker">
@@ -1564,7 +1551,7 @@
   </div>
 
 </div>
-```
+
 
   </section>
 
@@ -1574,7 +1561,7 @@
 
   <section class="feature" id="news">
 
-```
+
 <div class="container feature-grid">
 
   <div>
@@ -1627,7 +1614,7 @@
   </div>
 
 </div>
-```
+
 
   </section>
 
@@ -1640,7 +1627,7 @@
     id="publications"
   >
 
-```
+
 <div class="container">
 
   <div class="section-kicker">
@@ -1916,7 +1903,7 @@
   </div>
 
 </div>
-```
+
 
   </section>
 
@@ -1938,103 +1925,94 @@
 
     <div class="award-grid">
 
-      <!-- UNIGE Subside Tremplin -->
-
-      <a
-        href="https://mediaserver.unige.ch/play/307686"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="award"
-      >
-
-        <div class="award-year">
-          2026
-        </div>
-
-        <h3>
-          Subside Tremplin, supporting academic development and future research independence
-        </h3>
-
-        <p>
-          CHF 30,000 · University of Geneva
-        </p>
-
-      </a>
-
-
-      <!-- COST Young Researcher & Innovator -->
-
-      <a
-        href="YOUR_LINK_HERE"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="award"
-      >
-
-        <div class="award-year">
-          2025
-        </div>
-
-        <h3>
-          Young Researcher &amp; Innovator Grant
-        </h3>
-
-        <p>
-          €1,400 · COST association
-        </p>
-
-      </a>
-
-
-      <!-- EGU OSPP -->
-
-      <a
-        href="https://www.egu.eu/awards-medals/ospp-award/2025/laure-moinat/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="award"
-      >
-
-        <div class="award-year">
-          2025
-        </div>
-
-        <h3>
-          Outstanding Student and PhD candidate (OSPP) award
-        </h3>
-
-        <p>
-          €2,300 · European Geosciences Union 
-        </p>
-
-      </a>
-
-
-      <!-- ProClim Best Poster -->
-
-      <a
-        href="https://proclim.scnat.ch/fr/activities/uuid/i/d3594fcb-8359-5a86-9cd1-7b6b899ecfd1-24th_Swiss_Global_Change_Day_%E2%80%93_Meeting_Report_and_Conference_Documents"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="award"
-      >
-
-        <div class="award-year">
-          2024
-        </div>
-
-        <h3>
-          Swiss Global Change Day ProClim Best poster award,
-        </h3>
-
-        <p>
-          CHF 1,000 · Swiss Academy of Sciences
-        </p>
-
-      </a>
-
+  <a
+    href="https://mediaserver.unige.ch/play/307686"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="award"
+  >
+    <div class="award-year">
+      2026
     </div>
 
+    <div>
+      <h3>
+        Subside Tremplin, supporting academic development and future research independence
+      </h3>
+
+      <p>
+        CHF 30,000 · University of Geneva
+      </p>
+    </div>
+  </a>
+
+
+  <a
+    href="YOUR_LINK_HERE"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="award"
+  >
+    <div class="award-year">
+      2025
+    </div>
+
+    <div>
+      <h3>
+        Young Researcher &amp; Innovator Grant
+      </h3>
+
+      <p>
+        €1,400 · COST Association
+      </p>
+    </div>
+  </a>
+
+
+  <a
+    href="https://www.egu.eu/awards-medals/ospp-award/2025/laure-moinat/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="award"
+  >
+    <div class="award-year">
+      2025
+    </div>
+
+    <div>
+      <h3>
+        Outstanding Student and PhD Candidate (OSPP) Award
+      </h3>
+
+      <p>
+        €2,300 · European Geosciences Union
+      </p>
+    </div>
+  </a>
+
+
+  <a
+    href="https://proclim.scnat.ch/fr/activities/uuid/i/d3594fcb-8359-5a86-9cd1-7b6b899ecfd1-24th_Swiss_Global_Change_Day_%E2%80%93_Meeting_Report_and_Conference_Documents"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="award"
+  >
+    <div class="award-year">
+      2024
+    </div>
+
+    <div>
+      <h3>
+        Swiss Global Change Day ProClim Best Poster Award
+      </h3>
+
+      <p>
+        CHF 1,000 · Swiss Academy of Sciences
+      </p>
+    </div>
+  </a>
+
+</div>
   </div>
 
 </section>
@@ -2044,7 +2022,7 @@
 
   <section id="teaching">
 
-```
+
 <div class="container two-column">
 
 
@@ -2205,7 +2183,6 @@
 
 
 </div>
-```
 
   </section>
 
@@ -2218,7 +2195,7 @@
     id="contact"
   >
 
-```
+
 <div class="container">
 
   <div class="contact-box">
@@ -2287,7 +2264,7 @@
   </div>
 
 </div>
-```
+
 
   </section>
 
@@ -2297,7 +2274,7 @@
 
   <footer>
 
-```
+
 <div class="container footer-inner">
 
   <div>
@@ -2309,7 +2286,7 @@
   </div>
 
 </div>
-```
+
 
   </footer>
 
