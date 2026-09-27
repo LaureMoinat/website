@@ -973,57 +973,64 @@
        AWARDS
        ========================================================= */
 
-    .awards {
-      background: var(--cream);
-    }
-
-    .award-grid {
-      display: grid;
-
-      grid-template-columns:
-        repeat(4, 1fr);
-
-      gap: 16px;
-    }
-
     .award {
-      background: white;
+  background: white;
 
-      border:
-        1px solid
-        #e2dfd4;
+  border:
+    1px solid
+    #e2dfd4;
 
-      border-radius: 17px;
+  border-radius: 17px;
 
-      padding: 22px;
-    }
+  padding: 22px;
 
-    .award-year {
-      color: var(--coral);
+  text-decoration: none;
 
-      font-size: 0.78rem;
+  display: block;
 
-      font-weight: 850;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
 
-      margin-bottom: 8px;
-    }
+  cursor: pointer;
+}
 
-    .award h3 {
-      color: var(--navy);
+.award:hover {
+  transform: translateY(-4px);
 
-      font-size: 0.98rem;
+  box-shadow:
+    0 12px 30px
+    rgba(18, 48, 71, 0.10);
 
-      line-height: 1.4;
+  border-color: var(--turquoise);
+}
 
-      margin-bottom: 6px;
-    }
+.award-year {
+  color: var(--coral);
 
-    .award p {
-      color: var(--muted);
+  font-size: 0.78rem;
 
-      font-size: 0.83rem;
-    }
+  font-weight: 850;
 
+  margin-bottom: 8px;
+}
+
+.award h3 {
+  color: var(--navy);
+
+  font-size: 0.98rem;
+
+  line-height: 1.4;
+
+  margin-bottom: 6px;
+}
+
+.award p {
+  color: var(--muted);
+
+  font-size: 0.83rem;
+}
 
     /* =========================================================
        CONTACT
@@ -1915,95 +1922,118 @@
 
   <section class="awards">
 
-```
-<div class="container">
+  <div class="container">
 
-  <div class="section-kicker">
-    Recognition
+    <div class="section-kicker">
+      Recognition
+    </div>
+
+    <h2 class="section-title">
+      Selected awards &amp; grants
+    </h2>
+
+    <div class="award-grid">
+
+      <!-- UNIGE Subside Tremplin -->
+
+      <a
+        href="https://mediaserver.unige.ch/play/307686"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="award"
+      >
+
+        <div class="award-year">
+          2026
+        </div>
+
+        <h3>
+          Subside Tremplin, supporting academic development and future research independence
+        </h3>
+
+        <p>
+          CHF 30,000 · University of Geneva
+        </p>
+
+      </a>
+
+
+      <!-- COST Young Researcher & Innovator -->
+
+      <a
+        href="YOUR_LINK_HERE"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="award"
+      >
+
+        <div class="award-year">
+          2025
+        </div>
+
+        <h3>
+          Young Researcher &amp; Innovator Grant
+        </h3>
+
+        <p>
+          €1,400 · COST association
+        </p>
+
+      </a>
+
+
+      <!-- EGU OSPP -->
+
+      <a
+        href="https://www.egu.eu/awards-medals/ospp-award/2025/laure-moinat/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="award"
+      >
+
+        <div class="award-year">
+          2025
+        </div>
+
+        <h3>
+          Outstanding Student and PhD candidate (OSPP) award
+        </h3>
+
+        <p>
+          €2,300 · European Geosciences Union 
+        </p>
+
+      </a>
+
+
+      <!-- ProClim Best Poster -->
+
+      <a
+        href="https://proclim.scnat.ch/fr/activities/uuid/i/d3594fcb-8359-5a86-9cd1-7b6b899ecfd1-24th_Swiss_Global_Change_Day_%E2%80%93_Meeting_Report_and_Conference_Documents"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="award"
+      >
+
+        <div class="award-year">
+          2024
+        </div>
+
+        <h3>
+          Swiss Global Change Day ProClim Best poster award,
+        </h3>
+
+        <p>
+          CHF 1,000 · Swiss Academy of Sciences
+        </p>
+
+      </a>
+
+    </div>
+
   </div>
 
-  <h2 class="section-title">
-    Selected awards &amp; grants
-  </h2>
-
-  <div class="award-grid">
-
-
-    <article class="award">
-
-      <div class="award-year">
-        2026
-      </div>
-
-      <h3>
-        UNIGE Subside Tremplin
-      </h3>
-
-      <p>
-        CHF 30,000 · Support for academic independence.
-      </p>
-
-    </article>
-
-
-    <article class="award">
-
-      <div class="award-year">
-        2025
-      </div>
-
-      <h3>
-        COST Young Researcher &amp; Innovator Grant
-      </h3>
-
-      <p>
-        €1,400 · Global tipping points research.
-      </p>
-
-    </article>
-
-
-    <article class="award">
-
-      <div class="award-year">
-        2025
-      </div>
-
-      <h3>
-        EGU Outstanding Student &amp; PhD Candidate Presentation
-      </h3>
-
-      <p>
-        €2,300 · Biogeodynamical paleoclimate modelling.
-      </p>
-
-    </article>
-
-
-    <article class="award">
-
-      <div class="award-year">
-        2024
-      </div>
-
-      <h3>
-        ProClim Best Poster
-      </h3>
-
-      <p>
-        CHF 1,000 · Swiss Global Change Day.
-      </p>
-
-    </article>
-
-
-  </div>
-
-</div>
-```
-
-  </section>
-
+</section>
   <!-- ========================================================
        TEACHING + ABOUT — NOW AFTER AWARDS
        ======================================================== -->
