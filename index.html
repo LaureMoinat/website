@@ -949,20 +949,36 @@
 
 .teaching-item,
 .supervision-item {
-  display: block;
+  display: grid;
 
-  padding: 20px 0;
+  grid-template-columns: 55px 1fr;
+
+  gap: 18px;
+
+  padding: 24px 0;
 
   border-top: 1px solid var(--line);
 
   background: transparent;
 
   text-decoration: none;
+
+  align-items: start;
 }
 
 .teaching-item:last-child,
 .supervision-item:last-child {
   border-bottom: 1px solid var(--line);
+}
+
+.teaching-year {
+  color: var(--coral);
+
+  font-size: 0.78rem;
+
+  font-weight: 850;
+
+  padding-top: 4px;
 }
 
 .teaching-item h3,
@@ -976,6 +992,16 @@
   margin: 0 0 6px;
 }
 
+.teaching-item p,
+.supervision-item p {
+  color: var(--muted);
+
+  font-size: 0.88rem;
+
+  line-height: 1.6;
+
+  margin: 0;
+}
 .teaching-item p,
 .supervision-item p {
   color: var(--muted);
@@ -2142,71 +2168,103 @@
 
       <div class="teaching-list">
 
-        <div class="teaching-item">
+  <div class="teaching-item">
 
-          <h3>
-            Nonlinear Systems · MSc Physics
-          </h3>
+    <div class="teaching-year">
+      2023–2026
+    </div>
 
-          <p>
-            Exercises, active-learning activities and assessment.
-          </p>
+    <div>
+      <h3>
+        Nonlinear Systems · MSc Physics
+      </h3>
 
-        </div>
+      <p>
+        Exercises, active-learning activities and assessment.
+      </p>
+    </div>
 
-        <div class="teaching-item">
-
-          <h3>
-            Climatology &amp; Meteorology · MSc Environmental Science
-          </h3>
-
-          <p>
-            Guest lectures in English on oceanography and climate
-            tipping elements.
-          </p>
-
-        </div>
-
-        <div class="teaching-item">
-
-          <h3>
-            Mathematical Methods I · BSc Physics
-          </h3>
-
-          <p>
-            Teaching and exercise sessions in French.
-          </p>
-
-        </div>
-
-        <div class="teaching-item">
-
-          <h3>
-            Physique Générale A · BSc Medicine
-          </h3>
-
-          <p>
-            Teaching in French.
-          </p>
-
-        </div>
-
-        <div class="teaching-item">
-
-          <h3>
-            Collège du Léman
-          </h3>
-
-          <p>
-            Mathematics, physics and chemistry teaching in English
-            and French.
-          </p>
-
-        </div>
-
-      </div>
+  </div>
 
 
+  <div class="teaching-item">
+
+    <div class="teaching-year">
+      2024–2026
+    </div>
+
+    <div>
+      <h3>
+        Climatology &amp; Meteorology · MSc Environmental Science
+      </h3>
+
+      <p>
+        Guest lectures in English on oceanography and climate
+        tipping elements.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="teaching-item">
+
+    <div class="teaching-year">
+      2021–2026
+    </div>
+
+    <div>
+      <h3>
+        Mathematical Methods I · BSc Physics
+      </h3>
+
+      <p>
+        Teaching and exercise sessions in French.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="teaching-item">
+
+    <div class="teaching-year">
+      2021–2026
+    </div>
+
+    <div>
+      <h3>
+        Physique Générale A · BSc Medicine
+      </h3>
+
+      <p>
+        Teaching in French.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="teaching-item">
+
+    <div class="teaching-year">
+      2022–present
+    </div>
+
+    <div>
+      <h3>
+        Collège du Léman
+      </h3>
+
+      <p>
+        Mathematics, physics and chemistry teaching in English
+        and French.
+      </p>
+    </div>
+
+  </div>
+
+</div>
       <!-- SUPERVISION -->
 
       <div class="supervision-block">
