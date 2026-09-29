@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Laure Moinat | Nonlinear Climate Dynamics</title>
 
-  <meta name="description" content="Laure Moinat — PhD researcher in nonlinear climate dynamics at the University of Geneva.">
+  <meta
+    name="description"
+    content="Laure Moinat — PhD researcher in nonlinear climate dynamics at the University of Geneva, studying multiple climate states, stability, tipping and transitions."
+  >
 
   <style>
 
@@ -169,7 +174,7 @@
           #e8f3f2 100%
         );
 
-      padding: 30px 0 35px;
+      padding: 42px 0 42px;
 
       border-bottom: 1px solid var(--line);
     }
@@ -211,38 +216,69 @@
       z-index: 1;
 
       display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 20px;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 45px;
       align-items: center;
     }
 
+    .hero-content {
+      max-width: 680px;
+    }
+
     .hero-photo {
-      width: min(100%, 650px);
+      width: min(100%, 560px);
       margin-left: auto;
     }
 
+    .hero-photo img {
+      width: 100%;
+      height: auto;
+      display: block;
+
+      border-radius: 24px;
+
+      box-shadow:
+        0 25px 60px
+        rgba(18, 48, 71, 0.18);
+
+      border: 1px solid var(--line);
+    }
+
     .intro-greeting {
-      color: var(--navy);
-      font-size: 2.2rem;
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      margin-bottom: 22px;
+      color: var(--blue);
+
+      font-size: 1.05rem;
+      font-weight: 750;
+
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+
+      margin-bottom: 14px;
     }
 
     h1 {
       color: var(--navy);
 
-      font-size: clamp(3.2rem, 7vw, 5.8rem);
+      font-size: clamp(3.2rem, 6vw, 5.3rem);
 
       line-height: 0.98;
 
       letter-spacing: -0.055em;
 
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
 
     .hero h1 span {
       color: var(--turquoise);
+    }
+
+    .hero-subtitle {
+      color: var(--blue);
+
+      font-size: 1.18rem;
+      font-weight: 650;
+
+      margin-bottom: 22px;
     }
 
     .hero-lead {
@@ -250,28 +286,33 @@
 
       color: #405761;
 
-      font-size: 1.23rem;
+      font-size: 1.14rem;
 
       line-height: 1.65;
 
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     .hero-buttons {
       display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
+      flex-wrap: wrap;
+      justify-content: flex-start;
       align-items: center;
-      gap: 12px;
-      margin-top: 35px;
+
+      gap: 10px;
+
+      margin-top: 25px;
     }
 
     .button {
       border-radius: 16px;
+
       display: inline-flex;
       align-items: center;
       justify-content: center;
+
       padding: 11px 16px;
+
       font-size: 0.9rem;
       white-space: nowrap;
     }
@@ -301,47 +342,24 @@
 
 
     /* =========================================================
-       HERO PHOTO & EDUCATION
+       HERO EDUCATION
        ========================================================= */
 
-    .hero-content {
-      max-width: 680px;
-    }
-
-    .hero-photo {
-      width: min(100%, 600px);
-      margin-left: auto;
-    }
-
-    .hero-photo img {
-      width: 100%;
-      height: auto;
-      display: block;
-
-      border-radius: 24px;
-
-      box-shadow:
-        0 25px 60px
-        rgba(18, 48, 71, 0.18);
-
-      border: 1px solid var(--line);
-    }
-
     .hero-education {
-      margin: 30px 0;
+      margin: 28px 0 0;
     }
 
     .hero-education h2 {
       color: var(--navy);
-      font-size: 1.25rem;
-      margin-bottom: 15px;
+      font-size: 1.15rem;
+      margin-bottom: 13px;
     }
 
     .education-item {
       display: flex;
       flex-direction: column;
 
-      margin-bottom: 12px;
+      margin-bottom: 11px;
 
       padding-left: 15px;
 
@@ -350,12 +368,12 @@
 
     .education-item strong {
       color: var(--navy);
-      font-size: 0.98rem;
+      font-size: 0.96rem;
     }
 
     .education-item span {
       color: var(--muted);
-      font-size: 0.88rem;
+      font-size: 0.86rem;
     }
 
 
@@ -537,9 +555,66 @@
       margin-top: 0;
     }
 
+    .research-contribution {
+      margin-top: 55px;
+
+      padding: 32px 35px;
+
+      border-left: 4px solid var(--turquoise);
+
+      background: #f1f6f3;
+
+      border-radius: 0 18px 18px 0;
+    }
+
+    .research-contribution h3 {
+      color: var(--navy);
+
+      font-size: 1.2rem;
+
+      margin-bottom: 10px;
+    }
+
+    .research-contribution p {
+      color: var(--muted);
+
+      max-width: 900px;
+
+      font-size: 0.98rem;
+    }
+
 
     /* =========================================================
-       FEATURED PROJECT / NEWS
+       FUTURE RESEARCH DIRECTION
+       ========================================================= */
+
+    .future-direction {
+      margin-top: 28px;
+
+      padding: 28px 0 0;
+
+      border-top: 1px solid var(--line);
+    }
+
+    .future-direction h3 {
+      color: var(--navy);
+
+      font-size: 1.25rem;
+
+      margin-bottom: 10px;
+    }
+
+    .future-direction p {
+      color: var(--muted);
+
+      max-width: 900px;
+
+      font-size: 1rem;
+    }
+
+
+    /* =========================================================
+       NEWS
        ========================================================= */
 
     .feature {
@@ -576,10 +651,10 @@
       display: grid;
 
       grid-template-columns:
-        1.2fr
-        0.8fr;
+        1.15fr
+        0.85fr;
 
-      gap: 70px;
+      gap: 65px;
 
       align-items: center;
     }
@@ -588,92 +663,70 @@
       color: #72d0c5;
     }
 
-    .feature h2 {
+    .news-title {
       color: white;
 
-      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-size: clamp(2.4rem, 4vw, 3.4rem);
 
-      line-height: 1.1;
+      line-height: 1.05;
 
       letter-spacing: -0.035em;
 
-      margin-bottom: 20px;
+      margin-bottom: 12px;
+
+      font-weight: 700;
+    }
+
+    .news-meta {
+      color: #72d0c5;
+
+      font-size: 0.82rem;
+
+      margin-bottom: 18px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 0.10em;
+
+      font-weight: 700;
+    }
+
+    .feature h3 {
+      color: white;
+
+      font-size: 1.35rem;
+
+      line-height: 1.35;
+
+      margin-bottom: 18px;
     }
 
     .feature p {
       color: #cbd9de;
 
-      font-size: 1.03rem;
+      font-size: 1.02rem;
 
       margin-bottom: 20px;
-    }
 
-    .news-title {
-      color: white;
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      line-height: 1.1;
-      letter-spacing: -0.035em;
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
-
-    .news-title + .section-kicker {
-      color: #72d0c5;
-      font-size: 0.85rem;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-weight: 600;
+      line-height: 1.7;
     }
 
     .news-visual {
       display: flex;
+
       justify-content: center;
+
       align-items: center;
     }
 
     .news-image {
       width: 100%;
+
       max-width: 520px;
+
       height: auto;
+
       display: block;
-    }
-
-    .branch {
-      width: 76%;
-      height: 76%;
-
-      position: relative;
-    }
-
-    .branch svg {
-      width: 100%;
-      height: 100%;
-      overflow: visible;
-    }
-
-    .feature-tag {
-      position: absolute;
-
-      left: 22px;
-      bottom: 20px;
-
-      background:
-        rgba(255,255,255,0.10);
-
-      border:
-        1px solid
-        rgba(255,255,255,0.18);
-
-      color: #e8f3f1;
-
-      padding: 8px 12px;
-
-      border-radius: 999px;
-
-      font-size: 0.75rem;
-
-      font-weight: 700;
     }
 
 
@@ -853,15 +906,15 @@
 
 
     /* =========================================================
-       OUTREACH
+       AWARDS
        ========================================================= */
 
-    .outreach-list {
+    .award-grid {
       display: grid;
       gap: 0;
     }
 
-    .outreach-item {
+    .award {
       display: grid;
 
       grid-template-columns: 55px 1fr;
@@ -880,22 +933,20 @@
 
       text-decoration: none;
 
-      align-items: start;
-
       transition: none;
     }
 
-    .outreach-item:last-child {
+    .award:last-child {
       border-bottom: 1px solid var(--line);
     }
 
-    .outreach-item:hover {
+    .award:hover {
       background: transparent;
       transform: none;
       box-shadow: none;
     }
 
-    .outreach-year {
+    .award-year {
       color: var(--coral);
 
       font-size: 0.78rem;
@@ -905,7 +956,7 @@
       padding-top: 4px;
     }
 
-    .outreach-item h3 {
+    .award h3 {
       color: var(--navy);
 
       font-size: 1.05rem;
@@ -915,12 +966,10 @@
       margin: 0 0 6px;
     }
 
-    .outreach-item p {
+    .award p {
       color: var(--muted);
 
       font-size: 0.88rem;
-
-      line-height: 1.6;
 
       margin: 0;
     }
@@ -941,6 +990,7 @@
 
       align-items: start;
     }
+
 
     /* Main Teaching list */
 
@@ -1042,16 +1092,14 @@
     }
 
 
-    /* =========================================================
-       AWARDS
-       ========================================================= */
+    /* Outreach */
 
-    .award-grid {
+    .outreach-list {
       display: grid;
       gap: 0;
     }
 
-    .award {
+    .outreach-item {
       display: grid;
 
       grid-template-columns: 55px 1fr;
@@ -1070,20 +1118,22 @@
 
       text-decoration: none;
 
+      align-items: start;
+
       transition: none;
     }
 
-    .award:last-child {
+    .outreach-item:last-child {
       border-bottom: 1px solid var(--line);
     }
 
-    .award:hover {
+    .outreach-item:hover {
       background: transparent;
       transform: none;
       box-shadow: none;
     }
 
-    .award-year {
+    .outreach-year {
       color: var(--coral);
 
       font-size: 0.78rem;
@@ -1093,7 +1143,7 @@
       padding-top: 4px;
     }
 
-    .award h3 {
+    .outreach-item h3 {
       color: var(--navy);
 
       font-size: 1.05rem;
@@ -1103,10 +1153,12 @@
       margin: 0 0 6px;
     }
 
-    .award p {
+    .outreach-item p {
       color: var(--muted);
 
       font-size: 0.88rem;
+
+      line-height: 1.6;
 
       margin: 0;
     }
@@ -1250,18 +1302,11 @@
       }
 
       .hero-buttons {
-        flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
       }
 
       .research-grid {
         grid-template-columns: 1fr;
-      }
-
-      .award-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 0;
       }
 
       .feature-grid {
@@ -1308,8 +1353,12 @@
         font-size: 1.05rem;
       }
 
-      .award-grid {
-        grid-template-columns: 1fr;
+      .hero-buttons {
+        justify-content: flex-start;
+      }
+
+      .research-contribution {
+        padding: 25px 22px;
       }
 
       .publication,
@@ -1373,6 +1422,7 @@
 
 </head>
 
+
 <body>
 
 
@@ -1395,10 +1445,6 @@
         </li>
 
         <li>
-          <a href="#projects">Projects</a>
-        </li>
-
-        <li>
           <a href="#publications">Publications</a>
         </li>
 
@@ -1407,7 +1453,7 @@
         </li>
 
         <li>
-          <a href="#about">About</a>
+          <a href="#awards">Awards</a>
         </li>
 
         <li>
@@ -1431,37 +1477,101 @@
 
       <div class="hero-grid">
 
+
         <div class="hero-content">
 
           <div class="intro-greeting">
-            Hi there, I am Laure!
+            Nonlinear Climate Dynamics
+          </div>
+
+          <h1>
+            Laure <span>Moinat</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            PhD researcher in physics · University of Geneva
           </div>
 
           <p class="hero-lead">
-            I am currently a PhD researcher at the University of Geneva in physics studying how the
-            Earth system can occupy multiple climate states — and how
-            feedbacks, stability and nonlinear dynamics shape transitions
-            between them.
+            I study how nonlinear interactions within the Earth system
+            generate multiple climate states, and how feedbacks, stability
+            and dynamical processes govern transitions between them.
           </p>
+
 
           <div class="hero-education">
 
             <h2>Education</h2>
 
             <div class="education-item">
-              <strong>PhD in Physics - Nonlinear climate dynamics</strong>
+              <strong>PhD in Physics — Nonlinear Climate Dynamics</strong>
               <span>University of Geneva · 2023–present</span>
             </div>
 
             <div class="education-item">
-              <strong>Master of Science in physics, specialization in applied physics</strong>
+              <strong>Master of Science in Physics — Applied Physics</strong>
               <span>University of Geneva · 2021–2023</span>
             </div>
 
             <div class="education-item">
-              <strong>Bachelor of Science in physics</strong>
+              <strong>Bachelor of Science in Physics</strong>
               <span>University of Geneva · 2018–2021</span>
             </div>
+
+          </div>
+
+
+          <div class="hero-buttons">
+
+            <a
+              class="button button-primary"
+              href="#research"
+            >
+              Explore my research
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="https://scholar.google.com/citations?user=m_wviaoAAAAJ&hl=en&oi=ao"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Scholar
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="https://orcid.org/0000-0002-4831-731X"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ORCID
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="https://www.linkedin.com/in/laure-moinat-a71088219/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="Laure Moinat_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Full CV
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="#contact"
+            >
+              Get in touch
+            </a>
 
           </div>
 
@@ -1476,61 +1586,6 @@
           >
 
         </div>
-
-      </div>
-
-
-      <div class="hero-buttons">
-
-        <a
-          class="button button-primary"
-          href="#research"
-        >
-          Explore my research
-        </a>
-
-        <a
-          class="button button-secondary"
-          href="https://scholar.google.com/citations?user=m_wviaoAAAAJ&hl=en&oi=ao"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Google Scholar
-        </a>
-
-        <a
-          class="button button-secondary"
-          href="https://orcid.org/0000-0002-4831-731X"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ORCID
-        </a>
-
-        <a
-          class="button button-secondary"
-          href="https://www.linkedin.com/in/laure-moinat-a71088219/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-
-        <a
-          class="button button-secondary"
-          href="Laure Moinat_CV.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full CV
-        </a>
-
-        <a
-          class="button button-secondary"
-          href="#contact"
-        >
-          Get in touch
-        </a>
 
       </div>
 
@@ -1559,11 +1614,14 @@
       </h2>
 
       <p class="section-intro">
-        My research focuses on how nonlinear interactions within the Earth system give rise to multiple climate states
-        and tipping behavior. I combine coupled climate modeling, nonlinear dynamics, and paleoclimate data to understand the
-        emergence and stability of Earth’s multiple equilibrium states, their transitions,
-        and their consistency with paleoclimate evidence. I also use climate network approaches to characterize the spatial
-        signatures of climate states and identify early warning signals of approaching transitions.
+        My research focuses on how nonlinear interactions within the Earth system
+        give rise to multiple climate states and tipping behavior. I combine
+        coupled climate modeling, nonlinear dynamics, and paleoclimate data to
+        investigate the emergence and stability of equilibrium states, their
+        transitions, and their consistency with paleoclimate evidence. I also
+        use climate network approaches to characterize the spatial signatures
+        of climate states and identify potential early warning signals of
+        approaching transitions.
       </p>
 
 
@@ -1591,8 +1649,9 @@
           </a>
 
           <p>
-            Developed efficient coupled climate models that represent
-            the atmosphere, ocean, sea ice, vegetation, and ice sheets.
+            Developed and led the development of a coupled climate-modeling
+            framework representing the atmosphere, ocean, sea ice, vegetation,
+            and ice sheets.
           </p>
 
         </article>
@@ -1619,8 +1678,9 @@
           </a>
 
           <p>
-            Characterising multiple climate states, from Snowball to Hothouse Earth, and understanding
-            their role in Earth’s climate evolution over the last million years and into the future.
+            Characterising multiple climate states, from Snowball to Hothouse
+            Earth, and investigating their role in Earth’s climate evolution
+            over the last million years and into the future.
           </p>
 
         </article>
@@ -1647,12 +1707,48 @@
           </a>
 
           <p>
-            Developing methods to characterize transitions between
-            climate states and identify early warning signals of
-            approaching transitions.
+            Developing network-based methods to characterize transitions
+            between climate states and identify spatial signatures and
+            potential early warning signals.
           </p>
 
         </article>
+
+      </div>
+
+
+      <div class="research-contribution">
+
+        <h3>
+          Research contribution
+        </h3>
+
+        <p>
+          My work combines physical climate modeling with nonlinear dynamical
+          systems approaches. A central part of my research has been the
+          development of BIG-MITgcm, a coupled framework designed to explore
+          equilibrium climate states and long-timescale Earth-system feedbacks.
+          Alongside model development, I investigate the mechanisms controlling
+          the stability and transitions of different climate states.
+        </p>
+
+      </div>
+
+
+      <div class="future-direction">
+
+        <h3>
+          Looking ahead
+        </h3>
+
+        <p>
+          I aim to understand how the stability of an Earth-system state
+          influences its response to external forcing, and how state-dependent
+          climate sensitivity can be quantified across different climate
+          regimes. This provides a framework for connecting equilibrium-state
+          dynamics, feedback processes, and the changing sensitivity of the
+          Earth system.
+        </p>
 
       </div>
 
@@ -1675,32 +1771,36 @@
           News
         </div>
 
-        <div class="section-kicker">
-          Most recent publication: Climate network characterization of the Atlantic Meridional Overturning Circulation edge state
+        <div class="news-meta">
+          Most recent publication · Physical Review Research · 2026
         </div>
+
+        <h3>
+          Climate network characterization of the Atlantic Meridional
+          Overturning Circulation edge state
+        </h3>
 
         <p>
           This work characterizes the spatial signature of the AMOC edge state,
-          also known as the Melancholia state, which lies on the boundary separating the ON and OFF states of the circulation.
-          Using climate networks, we identify a distinct signature of this state, marked by enhanced
-          teleconnections between the northern and southern Atlantic and increased network connectivity.
-
-          These results provide a potential way to identify the AMOC edge state in state-of-the-art
-          climate models and, potentially, in observations. They may also contribute to the development
-          of early warning signals for an approaching AMOC collapse.
+          also known as the Melancholia state, which lies on the boundary
+          separating the ON and OFF states of the circulation. Using climate
+          networks, we identify enhanced teleconnections between the northern
+          and southern Atlantic and increased network connectivity associated
+          with the edge state.
         </p>
 
         <p>
-          The figure on the right shows the strength of the links between the different regions.
-          The edge state, in its two convective modes, is characterized by the emergence of teleconnections with the
-          34° region at the surface. This shows that this unstable state exhibits a distinct spatial signature.
+          The results provide a potential framework for identifying this
+          unstable state in climate models and, potentially, observations,
+          contributing to the development of approaches for detecting
+          approaching AMOC transitions.
         </p>
 
         <a
           class="button button-secondary"
           href="https://doi.org/10.1103/q9bd-4h4j"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           Read the publication
         </a>
@@ -1712,7 +1812,7 @@
 
         <img
           src="news.png"
-          alt="Most recent publication"
+          alt="Climate network characterization of the AMOC edge state"
           class="news-image"
         >
 
@@ -1788,7 +1888,8 @@
               </h3>
 
               <p class="work-authors">
-                Pietro Sternai & Laure Moinat, Agostino Meroni, Bram Vaes, Claudia Pasquero, Maura Brunetti and Christian Vérard
+                Pietro Sternai & Laure Moinat, Agostino Meroni, Bram Vaes,
+                Claudia Pasquero, Maura Brunetti and Christian Vérard
               </p>
 
               <span class="work-status">
@@ -1993,7 +2094,7 @@
        AWARDS
        ======================================================== -->
 
-  <section class="awards">
+  <section class="awards" id="awards">
 
     <div class="container">
 
@@ -2034,12 +2135,7 @@
         </a>
 
 
-        <a
-          href="YOUR_LINK_HERE"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="award"
-        >
+        <div class="award">
 
           <div class="award-year">
             2025
@@ -2057,7 +2153,7 @@
 
           </div>
 
-        </a>
+        </div>
 
 
         <a
@@ -2110,6 +2206,7 @@
           </div>
 
         </a>
+
 
       </div>
 
@@ -2228,7 +2325,7 @@
         <div class="supervision-block">
 
           <h2 class="section-title">
-            Student supervision
+            Supervision &amp; mentoring
           </h2>
 
           <div class="supervision-list">
@@ -2517,4 +2614,5 @@
 
 
 </body>
+
 </html>
